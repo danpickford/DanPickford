@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Styles/Style1.css" rel="stylesheet" />
+    <script src="~/Content/JS/jquery-1.9.0.min.js"></script>
+    <script src="~/Content/JS/core.js"></script>
+</head>
+<body onload="andStartTheShow()">
+    <div class="content">
+        <div id="headerContainer" class="header">
+            <div id="menuSpace" style="float: left; width: 60%; height: 100%; opacity: 0.4; background-color: #000;">&nbsp;</div>
+            <div id="1" style="opacity: 0;" class="MenuItem" onmouseover="animateMenuDescription(1,true);" 
+                onmouseout="animateMenuDescription(1,false);" onclick="clickDown(1,'@Url.Action("About")')">About</div>
+            <div id="2" style="opacity: 0;" class="MenuItem" onmouseover="animateMenuDescription(2,true);" 
+                onmouseout="animateMenuDescription(2,false);" onclick="clickDown(2,'@Url.Action("Blog")');">Blog</div>
+            <div id="3" style="opacity: 0;" class="MenuItem" onmouseover="animateMenuDescription(3,true);" 
+                onmouseout="animateMenuDescription(3,false);" onclick="clickDown(3,'@Url.Action("Dan.Dev")');">Dan.Dev</div>
+            <div id="4" style="opacity: 0;" class="MenuItem" onmouseover="animateMenuDescription(4,true);" 
+                onmouseout="animateMenuDescription(4,false);" onclick="clickDown(4,'@Url.Action("Project")');">Projects</div>
+        </div>
+        <div id="divBody" class="main">
+            @Html.Partial("SiteMenuInteraction");
+            @RenderBody()
+        </div>
+        <script src="~/Content/JS/menu.js"></script>
+        <div class="footer">
+            <div style="text-align: right;">DanPickford - MVC 4 - JavaScript - JQuery</div>
+        </div>
+    </div>
+    <div class="linkedIn">
+        <a href="http://au.linkedin.com/pub/daniel-pickford/3b/236/326" style="text-decoration: none;">
+            <img src="~/Content/Images/CurrentLinkedInImage/linkedIn.jpg" style="border: 0px; height: auto; width: 105px;" /></a>
+    </div>
+    <div class="linkedIn" style="padding-left: 15px; padding-right: 10px; background-color: #fff;">
+        <a href="http://au.linkedin.com/pub/daniel-pickford/3b/236/326">
+            <img src="http://www.linkedin.com/img/webpromo/btn_profile_bluetxt_80x15.png" width="80" height="15" border="0" alt="View Daniel Pickford's profile on LinkedIn">
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿body, html {
+    width: auto;
+    height: 100%;
+    font-family: Arial;
+    font-size: 11px;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.content {
+    width: 100%;
+    height: 100%;
+}
+
+div.linkedIn {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+div.main {
+    background-image: url('../Images/res1366low.jpg');
+    width: 100%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+div.header {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+div.footer {
+    width: 100%;
+    height: 10%;
+    background-color: #ccc;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+div.MenuItem {
+    float: left;
+    width: 10%;
+    height: 100%;
+    color: #000;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+
+div.fancyBlock {
+    float: left;
+    background-color: #fff;
+    width: 10%;
+    height: 11.11%;
+    opacity: 0;
+}
+
+div.menuDescription {
+    position: absolute;
+    width: 195px; 
+    height: auto;
+    background-color: #fff; 
+    opacity:0; 
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+}
