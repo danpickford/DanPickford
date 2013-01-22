@@ -107,11 +107,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\OAuthTokenManager.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OAuthController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\danpage.cs" />
+    <Compile Include="Models\facebook.cs" />
     <Compile Include="Models\smugmug.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -157,6 +160,7 @@
     <None Include="Properties\PublishProfiles\danpickford.com - Web Deploy.pubxml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Shared\SiteMenuInteraction.cshtml" />
+    <Content Include="Views\OAuth\OAuthCallback.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
