@@ -58,19 +58,19 @@ function bugOut(a, url) {
     switch (a) {
         case 1:
             clearInterval(col1);
-            window.location.href = url;
+            if (url != "") { window.location.href = url };
             break;
         case 2:
             clearInterval(col2);
-            window.location.href = url;
+            if (url != "") { window.location.href = url };
             break;
         case 3:
             clearInterval(col3);
-            window.location.href = url;
+            if (url != "") { window.location.href = url };
             break;
         case 4:
             clearInterval(col4);
-            window.location.href = url;
+            if (url != "") { window.location.href = url };
             break;
     }
 }

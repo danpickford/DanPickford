@@ -124,7 +124,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\Images\CurrentLinkedInImage\linkedIn.jpg" />
     <Content Include="Content\Images\res1366low.jpg" />
+    <Content Include="Content\JS\about.js" />
     <Content Include="Content\JS\core.js" />
+    <Content Include="Content\JS\index.js" />
     <Content Include="Content\JS\jquery-1.9.0.min.js" />
     <Content Include="Content\JS\menu.js" />
     <Content Include="Content\Styles\Style1.css" />
@@ -161,6 +163,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Shared\SiteMenuInteraction.cshtml" />
     <Content Include="Views\OAuth\OAuthCallback.cshtml" />
+    <Content Include="Views\Home\Project.cshtml" />
+    <Content Include="Views\Home\DanDev.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

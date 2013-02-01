@@ -139,21 +139,29 @@ function tailTidy(a) {
         $('#2' + a).css('opacity', 0);
     }
 }
-
+var finished = 1;
 function flashFinished(a) {
     switch (a) {
         case 1:
             clearInterval(col1);
+            finished += 1;
             break;
         case 2:
             clearInterval(col2);
+            finished += 1;
             break;
         case 3:
             clearInterval(col3);
+            finished += 1;
             break;
         case 4:
             clearInterval(col4);
+            finished += 1;
             break;
+    }
+    if (finished == 4) {
+        MenuSplashDown();
+        finished += 1;
     }
 }
 
