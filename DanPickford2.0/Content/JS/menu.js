@@ -1,25 +1,25 @@
 ﻿function animateMenuDescription(a, fadeIn) {
-        jQuery.each($('#headerContainer div'), function (i, l) {
-            if (l.id != a) {
-                $('#' + l.id).css("opacity", 0.2);
-            }
-        });
-        jQuery.each($('#contentPlaceHolder div'), function (i, l) {
-            if (l.id != a) {
-                $('#c' + l.id).css("opacity", 0.2);
-            }
-        });
-
-
-        clearInterval(controlTimer);
-        if (fadeIn) {
-            controlTimer = setInterval('fadeInConetent(' + a + ')', 100);
-        } else {
-            $('#' + a).css('opacity', 0.2);
-            $('#c' + a).css('opacity', 0);
+    jQuery.each($('#headerContainer div'), function (i, l) {
+        if (l.id != a) {
+            $('#' + l.id).css("opacity", 0.2);
         }
+    });
+    jQuery.each($('#contentPlaceHolder div'), function (i, l) {
+        if (l.id != a) {
+            $('#c' + l.id).css("opacity", 0.2);
+        }
+    });
 
+
+    clearInterval(controlTimer);
+    if (fadeIn) {
+        controlTimer = setInterval('fadeInConetent(' + a + ')', 100);
+    } else {
+        $('#' + a).css('opacity', 0.2);
+        $('#c' + a).css('opacity', 0);
     }
+
+}
 
 function fadeInConetent(a) {
     var curMenuItemOpacity = parseFloat($('#' + a).css('opacity'));
@@ -58,29 +58,34 @@ function bugOut(a, url) {
     switch (a) {
         case 1:
             clearInterval(col1);
-            if (url != "") { window.location.href = url };
             break;
         case 2:
             clearInterval(col2);
-            if (url != "") { window.location.href = url };
             break;
         case 3:
             clearInterval(col3);
-            if (url != "") { window.location.href = url };
             break;
         case 4:
             clearInterval(col4);
-            if (url != "") { window.location.href = url };
             break;
+    }
+    if (url.indexOf("http") != -1) {
+        if (url != "") { window.open(url) };
+    } else {
+        if (url != "") { window.location.href = url };
     }
 }
 
 function flashOut(a, s) {
     var located = -1;
+    var endOfTail = -1;
     for (var i = 1; i < (totalLong + 1) ; i++) {
         var currentOpacity = parseFloat($('#' + i + a).css('opacity'));
         if (currentOpacity.toFixed(1) == '0.8') {
             located = i;
+        }
+        if (currentOpacity.toFixed(1) == '0.2') {
+            endOfTail = i;
         }
     }
 
@@ -92,11 +97,15 @@ function flashOut(a, s) {
         $('#' + located - a).css('opacity', '0.5');
         $('#' + (located - 1) + a).css('opacity', '0.2');
         $('#' + (located - 2) + a).css('opacity', 0);
+        //alert("located:" + located);
     }
-    if (located != -1 && located == totalLong) {
-        $('#' + located - a).css('opacity', '0.5');
-        $('#' + (located - 1) + a).css('opacity', '0.2');
-        $('#' + (located - 2) + a).css('opacity', 0);
+    if (located == totalLong && endOfTail < totalLong) {
+        $('#' + (endOfTail + 1) + a).css('opacity', '0.2');
+        $('#' + endOfTail + a).css('opacity', 0);
+        //alert("endoftail:" + endOfTail);
+    }
+    if (located != -1 && endOfTail == (totalLong - 1)) {
+        $('#' + (endOfTail + 1) + a).css('opacity', 0);
         bugOut(a, s);
     }
 }

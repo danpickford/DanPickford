@@ -77,3 +77,14 @@ div.menuDescription {
     font-size: 15px;
     padding: 10px 10px 10px 10px;
 }
+
+div.MenuItem:hover {
+    cursor: hand; cursor: pointer;
+}
+
+div.subMenuItem {
+    padding-left: 12px;
+}
+div.subMenuItem:hover {
+    cursor: hand; cursor: pointer;
+}

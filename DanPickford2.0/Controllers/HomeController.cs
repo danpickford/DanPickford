@@ -23,5 +23,19 @@ namespace DanPickford2._0.Controllers
             return View();
         }
 
+        // GET: /Home/DanDev
+        public ActionResult DanDev()
+        {
+
+            return View();
+        }
+
+        // GET: /Home/Project
+        public ActionResult Project()
+        {
+
+            return View();
+        }
+
     }
 }

@@ -109,6 +109,7 @@
   <ItemGroup>
     <Compile Include="Classes\OAuthTokenManager.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MunchController.cs" />
     <Compile Include="Controllers\OAuthController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -123,12 +124,25 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\Images\CurrentLinkedInImage\linkedIn.jpg" />
+    <Content Include="Content\Images\Munch\app icon.jpg" />
+    <Content Include="Content\Images\Munch\Cherry.png" />
+    <Content Include="Content\Images\Munch\Chicken Leg.png" />
+    <Content Include="Content\Images\Munch\Doughnut.png" />
+    <Content Include="Content\Images\Munch\Munch Background.jpg" />
+    <Content Include="Content\Images\Munch\Munch Eat.png" />
+    <Content Include="Content\Images\Munch\Munch Sad.png" />
+    <Content Include="Content\Images\Munch\Munch.png" />
+    <Content Include="Content\Images\Munch\Pizza.png" />
+    <Content Include="Content\Images\Munch\Splash_screen.jpg" />
     <Content Include="Content\Images\res1366low.jpg" />
     <Content Include="Content\JS\about.js" />
     <Content Include="Content\JS\core.js" />
+    <Content Include="Content\JS\danDev.js" />
     <Content Include="Content\JS\index.js" />
     <Content Include="Content\JS\jquery-1.9.0.min.js" />
     <Content Include="Content\JS\menu.js" />
+    <Content Include="Content\JS\projects.js" />
+    <Content Include="Content\Styles\munch.css" />
     <Content Include="Content\Styles\Style1.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -165,6 +179,9 @@
     <Content Include="Views\OAuth\OAuthCallback.cshtml" />
     <Content Include="Views\Home\Project.cshtml" />
     <Content Include="Views\Home\DanDev.cshtml" />
+    <Content Include="Views\Munch\Index.cshtml" />
+    <Content Include="Views\Munch\GameStart.cshtml" />
+    <Content Include="Views\Munch\muchLayout.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,13 +1,23 @@
 ﻿var timerControl;
 var controlInt = 1;
-var intCount = 1;
-var menuItems = { "Test": "Test.com", "Test1": "http://www.test1.com" };
+var intCount = 2;
+var menuItems = { "Up-to-date CV": "'http://www.danpickford.com/Daniel Pickford - Curriculum Vitae.docx'" };
 
 function MenuSplashDown() {
     $.each(menuItems, function (key, value) {
-            $('#2' + intCount).append('<div>'+ key+'</div>');
+        $('#' + intCount + '1').css('opacity','0.8');
+        $('#' + intCount + '1').append('<div class="subMenuItem" onclick="clickDown(1,' + value + ')">' + key + '</div>');
             intCount += 1;
     });
+    intCount = 2;
+    setInterval('testSubMenuIntegrity()', 1000);
+}
+function testSubMenuIntegrity() {
+    $.each(menuItems, function (key, value) {
+        $('#' + intCount + '1').css('opacity', '0.8');
+        intCount += 1;
+    });
+    intCount = 2;
 }
 
 function stopAndMoveOn(a) {
@@ -16,22 +26,4 @@ function stopAndMoveOn(a) {
     } else {
 
     }
-}
-
-function FlashMenu(a, up) {
-    var curMenuItemOpacity = parseFloat($('#' + a).css('opacity'));
-    if (up == true) {
-        if (curMenuItemOpacity < 1) {
-            $('#' + a).css('opacity', curMenuItemOpacity + 0.2);
-        } else {
-            stopAndMoveOn(a, false);
-        }
-    } else {
-        if (curMenuItemOpacity > 0.4) {
-            $('#' + a).css('opacity', curMenuItemOpacity - 0.2);
-        } else {
-            stopAndMoveOn(a);
-        }
-    }
-
 }

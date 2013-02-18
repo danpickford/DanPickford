@@ -25,7 +25,7 @@ namespace DanPickford2._0.Controllers
             var consumer = new WebConsumer(serviceProvider, myMug.InMemoryTokenManager);
 
             // Url to redirect to
-            var authUrl = new Uri(Request.Url.Scheme + "://" + Request.Url.Authority + "/OAuth/OAuthCallBack");
+            var authUrl = new Uri(Request.Url.Scheme + "://" + Request.Url.Authority + "/OAuth/OAuthCallBack/");
 
             // request access
             
