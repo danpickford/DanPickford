@@ -126,11 +126,11 @@
     <Content Include="Content\Images\CurrentLinkedInImage\linkedIn.jpg" />
     <Content Include="Content\Images\Munch\app icon.jpg" />
     <Content Include="Content\Images\Munch\Cherry.png" />
-    <Content Include="Content\Images\Munch\Chicken Leg.png" />
+    <Content Include="Content\Images\Munch\Chicken_Leg.png" />
     <Content Include="Content\Images\Munch\Doughnut.png" />
-    <Content Include="Content\Images\Munch\Munch Background.jpg" />
-    <Content Include="Content\Images\Munch\Munch Eat.png" />
-    <Content Include="Content\Images\Munch\Munch Sad.png" />
+    <Content Include="Content\Images\Munch\Munch_Background.jpg" />
+    <Content Include="Content\Images\Munch\Munch_Eat.png" />
+    <Content Include="Content\Images\Munch\Munch_Sad.png" />
     <Content Include="Content\Images\Munch\Munch.png" />
     <Content Include="Content\Images\Munch\Pizza.png" />
     <Content Include="Content\Images\Munch\Splash_screen.jpg" />
@@ -142,6 +142,7 @@
     <Content Include="Content\JS\jquery-1.9.0.min.js" />
     <Content Include="Content\JS\menu.js" />
     <Content Include="Content\JS\projects.js" />
+    <Content Include="Content\JS\quintus-all.min.js" />
     <Content Include="Content\Styles\munch.css" />
     <Content Include="Content\Styles\Style1.css" />
     <Content Include="Global.asax" />

@@ -8,23 +8,23 @@
 }
 div.munchBox {
     position: absolute;
-    height: 500px;
-    width: 700px;
-    margin: -250px 0 0 -350px;
+    height: 600px;
+    width: 850px;
+    margin: -300px 0 0 -425px;
     top: 50%;
     left: 50%;
     background-image: url('../Images/Munch/Splash_screen.jpg');
     background-size: contain;
 }
 
-canvas.munchBox {
+/*canvas.munchBox {
     position: absolute;
-    height: 500px;
-    width: 700px;
-    margin: -250px 0 0 -350px;
+    height: 600px;
+    width: 850px;
+    margin: -300px 0 0 -425px;
     top: 50%;
     left: 50%;
-}
+}*/
 
 #munchBox:hover {
     cursor: hand; cursor: pointer;
