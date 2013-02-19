@@ -7,6 +7,7 @@
             scale: 0.2,
             z: 100
         });
+        this.on("hit", this, "collision");
         Q.input.on("left", this, "moveLeft");
         Q.input.on("right", this, "moveRight");
         Q.input.on("up", this, "openMouth");
@@ -25,5 +26,8 @@
     },
     openMouth: function () {
         this.p.asset = "../../Content/Images/Munch/Munch_Eat.png";
+    },
+    collision: function() {
+        alert("Hit");
     }
 });
