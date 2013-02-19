@@ -118,7 +118,7 @@ menuDescriptor.prototype.animateMenuDescription = function(a, fadeIn) {
     function MenuSplashDown() {
         $.each(menuItems, function (key, value) {
             $('#' + intCount + pageInt).css('opacity', '0.8');
-            $('#' + intCount + pageInt).append('<div class="subMenuItem" onclick="clickDown(1,' + value + ')">' + key + '</div>');
+            $('#' + intCount + pageInt).append('<div class="subMenuItem" onclick="clickDown(' + pageInt + ',' + value + ')">' + key + '</div>');
             intCount += 1;
         });
         intCount = 2;
