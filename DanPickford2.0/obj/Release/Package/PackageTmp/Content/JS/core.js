@@ -162,6 +162,18 @@ function flashFinished(a) {
     if (finished == 4) {
         MenuSplashDown();
         finished += 1;
+        $('#1').attr("onmouseover", "tmenuDescriptor.animateMenuDescription(1,true);");
+        $('#1').attr("onmouseout", "tmenuDescriptor.animateMenuDescription(1,false);");
+
+        $('#2').attr("onmouseover", "tmenuDescriptor.animateMenuDescription(2,true);");
+        $('#2').attr("onmouseout", "tmenuDescriptor.animateMenuDescription(2,false);");
+
+        $('#3').attr("onmouseover", "tmenuDescriptor.animateMenuDescription(3,true);");
+        $('#3').attr("onmouseout", "tmenuDescriptor.animateMenuDescription(3,false);");
+
+        $('#4').attr("onmouseover", "tmenuDescriptor.animateMenuDescription(4,true);");
+        $('#4').attr("onmouseout", "tmenuDescriptor.animateMenuDescription(4,false);");
+        
     }
 }
 

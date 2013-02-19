@@ -141,6 +141,9 @@
     <Content Include="Content\JS\index.js" />
     <Content Include="Content\JS\jquery-1.9.0.min.js" />
     <Content Include="Content\JS\menu.js" />
+    <Content Include="Content\JS\Munch\Engine.js" />
+    <Content Include="Content\JS\Munch\Setup.js" />
+    <Content Include="Content\JS\Munch\Munch.js" />
     <Content Include="Content\JS\projects.js" />
     <Content Include="Content\JS\quintus-all.min.js" />
     <Content Include="Content\Styles\munch.css" />
