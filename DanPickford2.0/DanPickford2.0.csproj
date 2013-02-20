@@ -128,7 +128,10 @@
     <Content Include="Content\Images\Munch\Cherry.png" />
     <Content Include="Content\Images\Munch\Chicken_Leg.png" />
     <Content Include="Content\Images\Munch\Doughnut.png" />
-    <Content Include="Content\Images\Munch\Munch_Background.jpg" />
+    <Content Include="Content\Images\Munch\Munch_Background1s.jpg" />
+    <Content Include="Content\JS\Munch\Food.js" />
+    <Content Include="Content\JS\Munch\LevelBackground.js" />
+    <Content Include="Content\Images\Munch\Munch_Background1.jpg" />
     <Content Include="Content\Images\Munch\Munch_Eat.png" />
     <Content Include="Content\Images\Munch\Munch_Sad.png" />
     <Content Include="Content\Images\Munch\Munch.png" />
