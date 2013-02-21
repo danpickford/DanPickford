@@ -4,18 +4,21 @@
             asset: "../../Content/Images/Munch/Munch.png",
             x: 200,
             y: 480, //The height of the Canvas minus the height of munch divided by two.
+            cx: 67.5,
+            cy: 81.5,
             z: 100,
             gravity: 0,
             collisionMask: 8,
             sadFace: 0,
             mouthFace: 0
+            //points: [[16, 67], [69, 46], [126, 69], [69, 101]]
         });
         this.add("2d");
         this.on("bump.top", function (collision) {
             if (this.p.asset == "../../Content/Images/Munch/Munch_Eat.png") {
-                //collision.obj.destroy();
+                Q.state.inc("score", 50);
             } else {
-                //collision.obj.destroy();
+                Q.state.dec("lives", 1);
                 this.p.sadFace = 100;
             }
             
@@ -44,15 +47,16 @@
         }
     },
     moveLeft: function () {
-        this.p.x = this.p.x - 10;
+        this.p.x = this.p.x - 50;
+        if (this.p.x < (0 - this.p.w)) { this.p.x = (800 + this.p.cx) };
     },
     moveRight: function () {
-        this.p.x = this.p.x + 10;
+        this.p.x = this.p.x + 50;
+        if (this.p.x > (800 + this.p.w)) { this.p.x = (0 - this.p.cx) };
     },
     openMouth: function () {
         this.p.mouthFace = 10;
     },
     collision: function() {
-        //alert("Hit");
     }
 });

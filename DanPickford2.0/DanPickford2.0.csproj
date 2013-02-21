@@ -128,9 +128,14 @@
     <Content Include="Content\Images\Munch\Cherry.png" />
     <Content Include="Content\Images\Munch\Chicken_Leg.png" />
     <Content Include="Content\Images\Munch\Doughnut.png" />
+    <Content Include="Content\Images\Munch\Floor1.jpg" />
     <Content Include="Content\Images\Munch\Munch_Background1s.jpg" />
+    <Content Include="Content\Images\Munch\Munch_Eat_Original.png" />
+    <Content Include="Content\Images\Munch\Munch_Original.png" />
+    <Content Include="Content\Images\Munch\Munch_Sad_Original.png" />
+    <Content Include="Content\Images\Munch\Pizza_Original.png" />
+    <Content Include="Content\Images\Munch\Splash_screen_original.jpg" />
     <Content Include="Content\JS\Munch\Food.js" />
-    <Content Include="Content\JS\Munch\LevelBackground.js" />
     <Content Include="Content\Images\Munch\Munch_Background1.jpg" />
     <Content Include="Content\Images\Munch\Munch_Eat.png" />
     <Content Include="Content\Images\Munch\Munch_Sad.png" />
@@ -145,8 +150,10 @@
     <Content Include="Content\JS\jquery-1.9.0.min.js" />
     <Content Include="Content\JS\menu.js" />
     <Content Include="Content\JS\Munch\Engine.js" />
+    <Content Include="Content\JS\Munch\Floor.js" />
     <Content Include="Content\JS\Munch\Setup.js" />
     <Content Include="Content\JS\Munch\Munch.js" />
+    <Content Include="Content\JS\Munch\UI.js" />
     <Content Include="Content\JS\projects.js" />
     <Content Include="Content\JS\quintus-all.min.js" />
     <Content Include="Content\Styles\munch.css" />
