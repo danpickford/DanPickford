@@ -16,6 +16,7 @@
                     x: 720,
                     y: 70
                 }));
+                
                 stage.insert(new Q.UI.Text({
                     label: "0",
                     color: "black",

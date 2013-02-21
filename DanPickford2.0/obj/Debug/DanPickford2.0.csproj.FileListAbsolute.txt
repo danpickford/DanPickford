@@ -90,3 +90,4 @@ C:\Users\daniel.pickford\Documents\GitHub\DanPickford\DanPickford2.0\bin\System.
 C:\Users\daniel.pickford\Documents\GitHub\DanPickford\DanPickford2.0\obj\Debug\DanPickford2.0.dll
 C:\Users\daniel.pickford\Documents\GitHub\DanPickford\DanPickford2.0\obj\Debug\DanPickford2.0.pdb
 C:\Users\daniel.pickford\Documents\GitHub\DanPickford\DanPickford2.0\obj\Debug\DanPickford2.0.csprojResolveAssemblyReference.cache
+C:\Development\GitHub\DanPickford\DanPickford2.0\obj\Debug\DanPickford2.0.csprojResolveAssemblyReference.cache
