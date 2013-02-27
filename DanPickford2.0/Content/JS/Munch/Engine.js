@@ -11,7 +11,7 @@
                 stage.insert(new Q.Munch());
                 stage.insert(new Q.Food());
                 stage.insert(new Q.UI.Text({
-                    label: "1",
+                    label: "1", 
                     color: "black",
                     x: 720,
                     y: 70

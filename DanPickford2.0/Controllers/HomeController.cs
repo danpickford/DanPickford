@@ -37,5 +37,10 @@ namespace DanPickford2._0.Controllers
             return View();
         }
 
+        //GET: /Home/Collision
+        public ActionResult Collision()
+        {
+            return View();
+        }
     }
 }

@@ -135,6 +135,7 @@
     <Content Include="Content\Images\Munch\Munch_Sad_Original.png" />
     <Content Include="Content\Images\Munch\Pizza_Original.png" />
     <Content Include="Content\Images\Munch\Splash_screen_original.jpg" />
+    <Content Include="Content\JS\Collision\Collision.js" />
     <Content Include="Content\JS\Munch\Food.js" />
     <Content Include="Content\Images\Munch\Munch_Background1.jpg" />
     <Content Include="Content\Images\Munch\Munch_Eat.png" />
@@ -196,6 +197,7 @@
     <Content Include="Views\Munch\Index.cshtml" />
     <Content Include="Views\Munch\GameStart.cshtml" />
     <Content Include="Views\Munch\muchLayout.cshtml" />
+    <Content Include="Views\Home\Collision.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
