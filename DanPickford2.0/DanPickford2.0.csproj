@@ -152,6 +152,7 @@
     <Content Include="Content\JS\menu.js" />
     <Content Include="Content\JS\Munch\Engine.js" />
     <Content Include="Content\JS\Munch\Floor.js" />
+    <Content Include="Content\JS\Munch\Texts.js" />
     <Content Include="Content\JS\Munch\Setup.js" />
     <Content Include="Content\JS\Munch\Munch.js" />
     <Content Include="Content\JS\Munch\UI.js" />

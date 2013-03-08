@@ -10,8 +10,8 @@
             gravity: 0,
             collisionMask: 8,
             sadFace: 0,
-            mouthFace: 0
-            //points: [[16, 67], [69, 46], [126, 69], [69, 101]]
+            mouthFace: 0,
+            points: [[-55.5, 0], [0,26.5], [55.5, 0], [0, -26.5]]
         });
         this.add("2d");
         this.on("bump.top", function (collision) {
@@ -23,12 +23,10 @@
             }
             
         });
-        
-        this.on("hit", this, "collision");
         Q.input.on("left", this, "moveLeft");
         Q.input.on("right", this, "moveRight");
         Q.input.on("up", this, "openMouth");
-        
+        Q.state.on("change.lives", this, "lives");
     },
 
     step: function (dt) {
@@ -45,6 +43,7 @@
             this.p.sadFace = this.p.sadFace - 1;
             this.p.asset = "../../Content/Images/Munch/Munch_Sad.png";
         }
+
     },
     moveLeft: function () {
         this.p.x = this.p.x - 50;
@@ -57,6 +56,7 @@
     openMouth: function () {
         this.p.mouthFace = 10;
     },
-    collision: function() {
-    }
+    lives: function (lives) {
+        this.p.sadFace = 100;
+    },
 });
