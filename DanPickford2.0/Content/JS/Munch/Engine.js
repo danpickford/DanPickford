@@ -2,7 +2,7 @@
         "../../Content/Images/Munch/Doughnut.png", "../../Content/Images/Munch/Cherry.png",
         "../../Content/Images/Munch/Chicken_Leg.png", "../../Content/Images/Munch/Munch_Eat.png",
         "../../Content/Images/Munch/Munch_Sad.png", "../../Content/Images/Munch/Pizza.png",
-        "../../Content/Images/Munch/Floor1.jpg", "../../Content/Images/Munch/Munch_Mouth.png"], function () {
+        "../../Content/Images/Munch/Floor1.jpg"], function () {
             $('#state').html("MUUUNNNCCHHH!!");
             $('#munchBox').focus();
             Q.state.set("score", 0);
