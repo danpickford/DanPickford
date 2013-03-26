@@ -10,10 +10,10 @@
         });
         this.add("2d");
         this.on("bump.bottom", function (collision) {
-            this.p.y = -10;
-            this.p.x = Q.random(100, 500);
-            var someFood = Math.floor(Q.random(1, 4));
-            switch (someFood) {
+                this.p.y = -10;
+                this.p.x = Q.random(100, 500);
+                var someFood = Math.floor(Q.random(1, 4));
+                switch (someFood) {
                 case 1:
                     this.p.asset = "../../Content/Images/Munch/Pizza.png";
                     break;
@@ -29,8 +29,16 @@
                 default:
                     this.p.asset = "../../Content/Images/Munch/Pizza.png";
                     break;
-
             }
         });
+    },
+    step: function(p) {
+        if (Q.state.get("lives") == 0) {
+            this.destroy();
+            //var floor = Q("Floor").first();
+            //var munch = Q("Munch").first();
+            //floor.destroy();
+            //munch.destroy();
+        }
     }
 });

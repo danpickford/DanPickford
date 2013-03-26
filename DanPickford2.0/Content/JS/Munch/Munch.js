@@ -18,10 +18,12 @@
             if (this.p.asset == "../../Content/Images/Munch/Munch_Eat.png") {
                 Q.state.inc("score", 50);
             } else {
-                Q.state.dec("lives", 1);
+                if (Q.state.get("lives") == 1) {
+                    Q.stageScene("CleanYourSelfUpYouDead", 1, { label: "Munch starved to death.\nOpen my mouth next time press up.\nYour score: " + Q.state.get("score") });
+                }
+                if (Q.state.get("lives") > 0) { Q.state.dec("lives", 1); }
                 this.p.sadFace = 100;
             }
-            
         });
         Q.input.on("left", this, "moveLeft");
         Q.input.on("right", this, "moveRight");
