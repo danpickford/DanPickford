@@ -1,7 +1,7 @@
 ﻿Q.UI.Text.extend("Score", {
     init: function (p) {
         this._super({
-            label: "0",
+            label: "" + Q.state.get("score"),
             x: 740,
             y: 160
         });

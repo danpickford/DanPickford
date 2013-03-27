@@ -17,6 +17,7 @@
         this.on("bump.top", function (collision) {
             if (Q.state.get("lives") == 1) {
                 Q.stageScene("CleanYourSelfUpYouDead", 1, { label: "Munch starved to death!\nFood go in mouth not on floor.\nYour score: " + Q.state.get("score") });
+                Q.stage().pause();
             }
             if (Q.state.get("lives") > 0) {Q.state.dec("lives", 1);}
         });

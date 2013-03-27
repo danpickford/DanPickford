@@ -188,6 +188,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\CV\Daniel_Pickford_Curriculum_Vitae.docx" />
     <None Include="Properties\PublishProfiles\danpickford.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\danpickford.com - Web Deploy.pubxml" />
     <Content Include="Views\Home\About.cshtml" />
