@@ -1,4 +1,8 @@
-﻿function menuDescriptor() {};
+﻿function randomNumberBetween (min, max) {
+    return min + Math.random() * (max - min);
+}
+
+function menuDescriptor() {};
 menuDescriptor.prototype.animateMenuDescription = function(a, fadeIn) {
     jQuery.each($('#headerContainer div'), function (i, l) {
         if (l.id != a) {
@@ -21,11 +25,13 @@ menuDescriptor.prototype.animateMenuDescription = function(a, fadeIn) {
     }
 
 }
-
-    function fadeInConetent(a) {
+//Responsible for fading in the description of each menu item and the menu item it's self.
+function fadeInConetent(a) {
         var curMenuItemOpacity = parseFloat($('#' + a).css('opacity'));
         var curDescOpacity = parseFloat($('#c' + a).css('opacity'));
-
+        //Make the description bounce.
+        $('#c' + a).css('left',randomNumberBetween(5,80) + '%');
+        $('#c' + a).css('top', randomNumberBetween(15,75) + '%');
         if (curDescOpacity.toFixed(1) < 1) {
             $('#' + a).css('opacity', curMenuItemOpacity + 0.2);
             $('#c' + a).css('opacity', curDescOpacity + 0.2);
