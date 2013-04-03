@@ -14,6 +14,7 @@
             points: 0
         });
         this.add("2d");
+
         this.on("bump.top", function (collision) {
             if (this.p.asset == "../../Content/Images/Munch/Munch_Eat.png") {
                 Q.state.inc("score", 50);
@@ -68,5 +69,5 @@
     },
     lives: function (lives) {
         this.p.sadFace = 100;
-    },
+    }
 });

@@ -22,7 +22,7 @@
                     x: 720,
                     y: 70
                 }));
-                
+                Q.stageScene("touchScene", 1);
             });
             
             Q.scene("level2", function (stage) {
@@ -51,7 +51,7 @@
                     x: 720,
                     y: 70
                 }));
-
+                Q.stageScene("touchScene", 1);
             });
             Q.scene("level3", function (stage) {
                 Q.state.add("lives", 1);
@@ -89,6 +89,7 @@
                     x: 720,
                     y: 70
                 }));
+                Q.stageScene("touchScene", 1);
 
             });
             Q.scene("CleanYourSelfUpYouDead", function(stage) {
@@ -114,7 +115,12 @@
                 box.fit(40);
             });
 
+            Q.scene("touchScene", function (stage) {
+                stage.insert(new Q.MouseDetect());
+            });
+
             $("#munchBox").css("background-image", "url('../../Content/Images/Munch/Munch_Background1s.jpg')");
-            Q.stageScene("level1");
+            Q.stageScene("level1", 0);
+            
             //Q.debug = true;
 });

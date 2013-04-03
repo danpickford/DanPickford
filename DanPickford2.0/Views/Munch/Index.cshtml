@@ -2,4 +2,8 @@
     Layout = "muchLayout.cshtml";
     ViewBag.Title = "Munch Game";
 }
-<div id="munchBox" class="munchBox" onclick="clicker('@Url.Action("GameStart")')"></div>
+<div id="munchBox" class="munchBox" onclick="clicker('@Url.Action("GameStart")')">
+    <div style="height: 90%;">&nbsp;</div>
+    <span style="font-weight: bold; color: #000; font-size: 18px;">Use the directional arrows to move Munch left or right and press Up to open his mouth to catch food.
+    You can now click and drag munch to his meal...</span>
+</div>

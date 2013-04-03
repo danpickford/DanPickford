@@ -12,7 +12,6 @@
             highrange: 0,
             dropspeed: 2
         });
-        this.on("drag");
         this.add("2d");
         this.p.y = (this.p.handycap * 100) * -1;
         this.on("bump.bottom", function (collision) {
@@ -42,19 +41,11 @@
             }
         });
     },
-    drag: function (touch) {
-        this.p.x = touch.origX + touch.dx;
-        this.p.y = touch.origY + touch.dy;
-    },
     step: function (p) {
         this.p.y = this.p.y + this.p.dropspeed;
         if (Q.state.get("lives") == 0) {
             this.destroy();
             Q.stage().pause();
-            //var floor = Q("Floor").first();
-            //var munch = Q("Munch").first();
-            //floor.destroy();
-            //munch.destroy();
         }
     }
 });
