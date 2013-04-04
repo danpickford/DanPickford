@@ -6,6 +6,7 @@
     <script src="~/Content/JS/jquery-1.9.0.min.js"></script>
     <script src="~/Content/JS/core.js"></script>
     <script src="~/Content/JS/menu.js"></script>
+    <script src="~/Content/JS/Site/backblender.js"></script>
 </head>
 <body onload="andStartTheShow()">
     <script>
@@ -20,11 +21,15 @@
             <div id="4" style="opacity: 0;" class="MenuItem" onclick="clickDown(4,'@Url.Action("Project")');"><span style="padding-left: 15px;">Projects</span></div>
         </div>
         <div id="divBody" class="main">
+                        <div id="divBodyDay" class="main" style="background-image: url('../Content/Images/res1366lowday.jpg'); position: absolute; left: 0; top: 0; opacity: 0;">
+                &nbsp;
+            </div>
             @Html.Partial("SiteMenuInteraction");
             @RenderBody()
         </div>
         <div class="footer">
-            <div style="text-align: right; float:left; width:50%;"><b>Please note DanPickford.com is still under construction.</b></div>
+            <div style="text-align: right; float: left; width: 50%;"><b>Please note DanPickford.com is still under construction.</b></div>
+            <div id="status">&nbsp;</div>
             <div style="text-align: right; float: left; width: 50%;">DanPickford - MVC 4 - JavaScript - JQuery - OAuth</div>
         </div>
     </div>
@@ -36,6 +41,11 @@
         <a href="http://au.linkedin.com/pub/daniel-pickford/3b/236/326">
             <img src="http://www.linkedin.com/img/webpromo/btn_profile_bluetxt_80x15.png" width="80" height="15" border="0" alt="View Daniel Pickford's profile on LinkedIn">
         </a>
+    </div>
+    <div id="moonandsun" style="position: absolute; left:0; top:0; width: 100%; padding-top: 1.5%;">
+        <div style="float: left; width: 27%; padding-left: 1%;"><img src="~/Content/Images/Site/dark1.png" /></div>
+        <div style="float: left; width: 27%; padding-left: 1%;"><img src="~/Content/Images/Site/middle1.png" /></div>
+        <div style="float: left; width: 20%; padding-left: 1%;"><img src="~/Content/Images/Site/light1.png" /></div>
     </div>
 </body>
 </html>

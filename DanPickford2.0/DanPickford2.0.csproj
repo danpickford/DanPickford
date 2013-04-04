@@ -135,6 +135,12 @@
     <Content Include="Content\Images\Munch\Munch_Sad_Original.png" />
     <Content Include="Content\Images\Munch\Pizza_Original.png" />
     <Content Include="Content\Images\Munch\Splash_screen_original.jpg" />
+    <Content Include="Content\Images\res1366lowday.jpg" />
+    <Content Include="Content\Images\Site\dark1.png" />
+    <Content Include="Content\Images\Site\light1.png" />
+    <Content Include="Content\Images\Site\middle1.png" />
+    <Content Include="Content\Images\Site\moon.png" />
+    <Content Include="Content\Images\Site\sun.png" />
     <Content Include="Content\JS\Munch\Food.js" />
     <Content Include="Content\Images\Munch\Munch_Background1.jpg" />
     <Content Include="Content\Images\Munch\Munch_Eat.png" />
@@ -165,6 +171,7 @@
     <Content Include="Content\JS\Quintus\quintus_sprites.js" />
     <Content Include="Content\JS\Quintus\quintus_touch.js" />
     <Content Include="Content\JS\Quintus\quintus_ui.js" />
+    <Content Include="Content\JS\Site\backblender.js" />
     <Content Include="Content\Styles\munch.css" />
     <Content Include="Content\Styles\Style1.css" />
     <Content Include="Global.asax" />

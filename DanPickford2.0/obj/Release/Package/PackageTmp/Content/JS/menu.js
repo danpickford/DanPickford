@@ -18,6 +18,8 @@ menuDescriptor.prototype.animateMenuDescription = function(a, fadeIn) {
 
     clearInterval(controlTimer);
     if (fadeIn) {
+        $('#c' + a).css('left', randomNumberBetween(5, 80) + '%');
+        $('#c' + a).css('top', randomNumberBetween(15, 50) + '%');
         controlTimer = setInterval('fadeInConetent(' + a + ')', 100);
     } else {
         $('#' + a).css('opacity', 0.2);
@@ -29,9 +31,6 @@ menuDescriptor.prototype.animateMenuDescription = function(a, fadeIn) {
 function fadeInConetent(a) {
         var curMenuItemOpacity = parseFloat($('#' + a).css('opacity'));
         var curDescOpacity = parseFloat($('#c' + a).css('opacity'));
-        //Make the description bounce.
-        $('#c' + a).css('left',randomNumberBetween(5,80) + '%');
-        $('#c' + a).css('top', randomNumberBetween(15,75) + '%');
         if (curDescOpacity.toFixed(1) < 1) {
             $('#' + a).css('opacity', curMenuItemOpacity + 0.2);
             $('#c' + a).css('opacity', curDescOpacity + 0.2);

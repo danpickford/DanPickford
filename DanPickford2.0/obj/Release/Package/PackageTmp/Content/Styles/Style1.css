@@ -76,6 +76,7 @@ div.menuDescription {
     opacity:0; 
     font-size: 15px;
     padding: 10px 10px 10px 10px;
+    z-index: 10;
 }
 
 div.MenuItem:hover {

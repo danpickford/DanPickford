@@ -3,10 +3,11 @@
         "../../Content/Images/Munch/Chicken_Leg.png", "../../Content/Images/Munch/Munch_Eat.png",
         "../../Content/Images/Munch/Munch_Sad.png", "../../Content/Images/Munch/Pizza.png",
         "../../Content/Images/Munch/Floor1.jpg"], function () {
-            $('#state').html("MUUUNNNCCHHH!!");
-            $('#munchBox').focus();
-            
+            $('#state').html("MUNCH! ");
             Q.scene("level1", function (stage) {
+                $('#munchBox').focus();
+                $("#restart").css("display", "none");
+                Q.clearStage(1);
                 Q.state.set("score", 0);
                 Q.state.set("lives", 3);
                 Q.state.set("level", 1);
@@ -22,7 +23,6 @@
                     x: 720,
                     y: 70
                 }));
-                Q.stageScene("touchScene", 1);
             });
             
             Q.scene("level2", function (stage) {
@@ -51,7 +51,7 @@
                     x: 720,
                     y: 70
                 }));
-                Q.stageScene("touchScene", 1);
+                //Q.stageScene("touchScene", 1);
             });
             Q.scene("level3", function (stage) {
                 Q.state.add("lives", 1);
@@ -89,7 +89,6 @@
                     x: 720,
                     y: 70
                 }));
-                Q.stageScene("touchScene", 1);
 
             });
             Q.scene("CleanYourSelfUpYouDead", function(stage) {
@@ -97,22 +96,12 @@
                     x: Q.width / 2, y: Q.height / 2, fill: "rgba(0,0,0,0.5)"
                 }));
 
-                var button = box.insert(new Q.UI.Button({
-                    x: 0,
-                    y: 20,
-                    fill: "#CCCCCC",
-                    label: "Play Again"
-                }));
                 var label = box.insert(new Q.UI.Text({
-                    x: 10, y: -10 - button.p.h,
+                    x: 10, y: -10,
                     label: stage.options.label
                 }));
                 
-                button.on("click", function () {
-                    Q.clearStages();
-                    Q.stageScene('level1');
-                });
-                box.fit(40);
+                box.fit(60);        
             });
 
             Q.scene("touchScene", function (stage) {

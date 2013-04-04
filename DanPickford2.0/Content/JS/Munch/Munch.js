@@ -18,20 +18,23 @@
         this.on("bump.top", function (collision) {
             if (this.p.asset == "../../Content/Images/Munch/Munch_Eat.png") {
                 Q.state.inc("score", 50);
-            } else {
-                if (Q.state.get("lives") == 1) {
-                    Q.stageScene("CleanYourSelfUpYouDead", 1, { label: "Munch starved to death.\nOpen my mouth next time press up.\nYour score: " + Q.state.get("score") });
-                }
-                if (Q.state.get("lives") > 0) { Q.state.dec("lives", 1); }
-                this.p.sadFace = 100;
-            }
+            } 
         });
         Q.input.on("left", this, "moveLeft");
         Q.input.on("right", this, "moveRight");
         Q.input.on("up", this, "openMouth");
+        Q.input.on("space", this, "openMouth");
         Q.state.on("change.lives", this, "lives");
     },
     step: function (dt) {
+        this.p.x = Q.inputs['mouseX'];
+        var tempy = Q.inputs['mouseY'];
+        if (ygap - tempy > ygaplimit) {
+            this.p.mouthFace = 10;
+            this.p.points = [[-55.5, 0], [0, 26.5], [55.5, 0], [0, -26.5]];
+        }
+        ygap = tempy;
+        
         if (this.p.mouthFace + this.p.sadFace == 0) {
             this.p.asset = "../../Content/Images/Munch/Munch.png";
             this.p.points = 0;
