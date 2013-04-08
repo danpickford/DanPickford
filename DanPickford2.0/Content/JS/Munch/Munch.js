@@ -19,7 +19,6 @@ Q.Sprite.extend("Munch", {
 
         this.on("bump.top", function (collision) {
             if (this.p.asset == "../../Content/Images/Munch/Munch_Eat.png") {
-                //alert();
                 Q.state.inc("score", parseInt(collision.obj.p.scoreVal));
             } 
         });

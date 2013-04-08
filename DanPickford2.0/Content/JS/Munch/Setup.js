@@ -6,7 +6,10 @@ var Q = window.Q = Quintus()                          // Create a new engine ins
     Q.setup("munchBox", {
             width: 800,
             height: 561,
-            downsampleWidth: 400, downsampleHeight: 280
+            downsampleWidth: 420,
+            downsampleHeight: 40,
+            upsampleWidth: 1024,
+            upsampleHeight: 768
         })
 
         .touch();                          // Add in touch support (for the UI)
