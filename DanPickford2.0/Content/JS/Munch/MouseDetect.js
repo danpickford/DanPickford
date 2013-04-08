@@ -11,11 +11,11 @@
             collisionMask: 0,
             gravity: 0
         });
+        Q.input.on("clicked", this, "mouth");
         this.on("drag");
     },
     drag: function (touch) {
         var munch = Q("Munch").first();
-        munch.p.x = touch.x;
-
+        //munch.p.x = touch.x;
     }
 });

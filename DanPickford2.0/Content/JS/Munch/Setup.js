@@ -5,18 +5,14 @@ var Q = window.Q = Quintus()                          // Create a new engine ins
         .include("Sprites, Scenes, Input, 2D, Touch, UI"); // Load any needed modules
     Q.setup("munchBox", {
             width: 800,
-            height: 561
+            height: 561,
+            downsampleWidth: 400, downsampleHeight: 280
         })
-        .controls()                        // Add in default controls (keyboard, buttons)
+
         .touch();                          // Add in touch support (for the UI)
     
     Q.input.mouseControls();            //Allows for mouse tracking. Q.input["mouseX"];
-    Q.input.keyboardControls({
-        SPACE: "space"
-    });
-    Q.input.touchControls({
-        controls: [['up', 'mouth']]
-    });
+
 Q.random = function (min, max) {
     return min + Math.random() * (max - min);
 }

@@ -13,15 +13,16 @@
 <div id="headpadding" style="height: 10%;">
     <span id="state" style="color: #fff;">Loading...</span>
 </div>
-<canvas id="munchBox" width="800" height="561"></canvas>
+<canvas id="munchBox" width="800" height="561" style="background-color: #000000;" onclick="openMouth()"></canvas>
 <script src="~/Content/JS/Munch/Setup.js"></script>
 <script src="~/Content/JS/Munch/MouseDetect.js"></script>
 <script src="~/Content/JS/Munch/Munch.js"></script>
 <script src="~/Content/JS/Munch/Food.js"></script>
 <script src="~/Content/JS/Munch/Floor.js"></script>
 <script src="~/Content/JS/Munch/Texts.js"></script>
+<script src="~/Content/JS/Munch/Levels.js"></script>
 <script src="~/Content/JS/Munch/Engine.js"></script>
-<div id="footerpadding" style="height: 20%;">
+<div id="footerpadding" style="height: 1%;">
     <span id="footertexts" style="color: #fff;">Programming by Daniel Pickford, Graphic Design by Amanda Breach</span>
 </div>
-<div id="restart" class="restart" onclick="javascript:Q.stageScene('level1', 0);">Restart</div>
+<div id="restart" class="restart" onclick="javascript:Q.stageScene('level1', 0);">&nbsp;</div>

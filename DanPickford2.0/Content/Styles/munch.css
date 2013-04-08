@@ -21,8 +21,8 @@ div.munchBox {
     cursor: hand; cursor: pointer;
 }
 div.restart {
-    position: absolute;top: 85%;left: 0;
-    background-color: #6495ed; width: 100%; display: none;height: 5%;text-align: center;padding-top: 2%;
+    position: absolute;top: 0;left: 0;
+    display: none; width: 100%;height: 100%;text-align: center;background-color: #0000ff;opacity: 0;
     color: #dcdcdc;font-weight: bold;
 }
 div.restart:hover {
