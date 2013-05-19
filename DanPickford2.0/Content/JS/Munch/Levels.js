@@ -31,6 +31,10 @@ Q.scene("level2", function (stage) {
     food1.p.highrange = 225;
     food2.p.lowrange = 275;//50px buffer to prevent overlapping.
     food2.p.highrange = 600;
+
+    food1.p.buffer = -200;
+    food2.p.buffer = -200;
+    
     stage.insert(food1);
     stage.insert(food2);
     stage.insert(new Q.Score());
@@ -57,16 +61,17 @@ Q.scene("level3", function (stage) {
     food1.p.highrange = 150;
 
     food2.p.foodid = 2;
-    food2.p.y = (2 * 100) * -1;
-    food2.p.lowrange = 150;
+    food2.p.lowrange = 175;
     food2.p.highrange = 350;
     food2.p.dropspeed = 1.5;
 
     food3.p.foodid = 3;
-    food3.p.y = (6 * 100) * -1;
-    food3.p.lowrange = 350;
+    food3.p.lowrange = 375;
     food3.p.highrange = 600;
-    food3.p.dropspeed = 2.5;
+
+    food1.p.buffer = -300;
+    food2.p.buffer = -300;
+    food3.p.buffer = -300;
 
     stage.insert(food1);
     stage.insert(food2);
@@ -96,16 +101,17 @@ Q.scene("level4", function (stage) {
     food1.p.highrange = 150;
 
     food2.p.foodid = 2;
-    food2.p.y = (2 * 100) * -1;
-    food2.p.lowrange = 150;
+    food2.p.lowrange = 175;
     food2.p.highrange = 350;
     food2.p.dropspeed = 1.5;
 
     food3.p.foodid = 3;
-    food3.p.y = (6 * 100) * -1;
-    food3.p.lowrange = 350;
+    food3.p.lowrange = 375;
     food3.p.highrange = 600;
-    food3.p.dropspeed = 2.5;
+    
+    food1.p.buffer = -300;
+    food2.p.buffer = -300;
+    food3.p.buffer = -300;
 
     stage.insert(food1);
     stage.insert(food2);
@@ -130,22 +136,28 @@ Q.scene("level5", function (stage) {
     var food1 = new Q.Food();
     var food2 = new Q.Food();
     var food3 = new Q.Food();
+    var food4 = new Q.Food();
 
     food1.p.lowrange = 50;
     food1.p.highrange = 150;
 
     food2.p.foodid = 2;
-    food2.p.y = (2 * 100) * -1;
     food2.p.lowrange = 150;
     food2.p.highrange = 350;
     food2.p.dropspeed = 1.5;
 
     food3.p.foodid = 3;
-    food3.p.y = (6 * 100) * -1;
     food3.p.lowrange = 350;
     food3.p.highrange = 600;
-    food3.p.dropspeed = 2.5;
+    food3.p.dropspeed = .5;
 
+    food4.p.foodid = 4;
+    
+    food1.p.buffer = -300;
+    food2.p.buffer = -300;
+    food3.p.buffer = -300;
+    food4.p.buffer = -400;
+    
     stage.insert(food1);
     stage.insert(food2);
     stage.insert(food3);

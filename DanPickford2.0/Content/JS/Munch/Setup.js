@@ -5,7 +5,8 @@ var Q = window.Q = Quintus()                          // Create a new engine ins
         .include("Sprites, Scenes, Input, 2D, Touch, UI"); // Load any needed modules
     Q.setup("munchBox", {
             width: 800,
-            height: 561
+            height: 561,
+            maximize: "touch"
         })
 
         .touch();                          // Add in touch support (for the UI)

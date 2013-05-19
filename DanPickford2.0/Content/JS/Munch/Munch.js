@@ -53,19 +53,19 @@ Q.Sprite.extend("Munch", {
             this.p.asset = "../../Content/Images/Munch/Munch_Sad.png";
         }
         
-        if (Q.state.get("score") > 500 && Q.state.get("level") == 1) {
+        if (Q.state.get("score") > 250 && Q.state.get("level") == 1) {
             Q.clearStages();
             Q.stageScene("level2");
         }
-        if (Q.state.get("score") > 2000 && Q.state.get("level") == 2) {
+        if (Q.state.get("score") > 900 && Q.state.get("level") == 2) {
             Q.clearStages();
             Q.stageScene("level3");
         }
-        if (Q.state.get("score") > 3800 && Q.state.get("level") == 3) {
+        if (Q.state.get("score") > 1800 && Q.state.get("level") == 3) {
             Q.clearStages();
             Q.stageScene("level4");
         }
-        if (Q.state.get("score") > 4900 && Q.state.get("level") == 4) {
+        if (Q.state.get("score") > 5000 && Q.state.get("level") == 4) {
             Q.clearStages();
             Q.stageScene("level5");
         }

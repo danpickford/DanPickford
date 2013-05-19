@@ -16,7 +16,7 @@
 Q.UI.Text.extend("Lives", {
     init: function (p) {
         this._super({
-            label: "3",
+            label: "" + Q.state.get("lives"),
             x: 740,
             y: 250
         });

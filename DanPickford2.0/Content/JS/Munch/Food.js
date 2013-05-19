@@ -2,24 +2,26 @@
     init: function (p) {
         this._super({
             asset: "../../Content/Images/Munch/Pizza.png",
-            x: Q.random(100, 500),
+            x: 0,
             y: -100,
             z: 0,
             collisionMask: 4,
             gravity: 0,
-            lowrange: 0,
-            highrange: 0,
+            lowrange: 100,
+            highrange: 500,
             dropspeed: 2,
             scoreVal: 50,
             foodid: 1,
+            buffer: -100
         });
+       
         this.add("2d");
 
         this.on("bump.bottom", function (collision) {
             if (collision.obj.isA("Food")) { //Make sure it's not food causing a collition.
                 collision.obj.p.x = collision.obj.p.x + 4;
             } else {
-                this.p.y = -100;
+                this.p.y = this.p.buffer;
                 if (this.p.lowrange == 0 && this.p.highrange == 0) {
                     this.p.x = Q.random(100, 500);
                 } else {
@@ -51,11 +53,10 @@
             }
         });
     },
-    GetFoodY: function (p) {
-        return this.p.y;
-    },
     step: function (p) {
-
+        if (this.p.x == 0) {
+            this.p.x = Q.random(this.p.lowrange, this.p.highrange);
+        }
         if (testFoodCatchable(this)) {
             this.p.y = this.p.y + this.p.dropspeed;
         }

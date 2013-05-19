@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Chris Equation Helper";
+    Layout = null;
+}
+<script src="~/Content/JS/jquery-1.9.0.min.js"></script>
+<link href="~/Content/Styles/Style1.css" rel="stylesheet" />
+<div style="width: 70%; height: 98%; padding: 1% 15% 1% 15%; font-size: 16px;">
+    <div style="padding: 1% 1% 1% 1%; height: 100%; background-image: url('../Content/Images/13959_198875141627_2120386_n.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <h2>Birthday Equation Helper</h2>
+        <span>The equation: <br /> 
+            A=((X-42)+(8.756583/X))<br />
+            B=(A-40)+(22331/500000)</span>
+        <br />
+        <br />
+        <input id="letterVal" type="hidden" value="empty" />
+        <input id="Step" type="hidden" value="1" />
+        <span id="step1">Enter the first letter of a country A for Africa,America,etc. and click next, letter: <input id="letter" type="text" style="width: 25px;" /><br /> Remember a and A have diferent ascii values.</span>
+        <span id="step2" style="display: none; width: 40%;"></span>
+        <span id="step3" style="display: none; width: 40%;"></span>
+        <span id="step4" style="display: none; width: 40%;">So now we are working on what B is, the first part is A-40. Take the answer to the previous step and deduct 40 from it.</span>
+        <span id="step5" style="display: none; width: 40%;">What is 22331 devided by 500000?</span>
+        <span id="step6" style="display: none; width: 40%;">Add the last two answers together to get B. Congratulations you now have a longitude and latitude try googleing it!</span>
+        <br /><br />
+        <input id="stepChanger" type="button" value="Next" onclick="click_process();" />
+        <span id="terms">By clicking next you acknowledge that Dan is a sexy beast.</span>
+    </div>
+</div>
+<script type="text/javascript">
+    function click_process(parameters) {
+        var curStep = $('#Step').val();
+        $('#step' + curStep).css('display', 'none');
+        if ($('#letterVal').val() == 'empty') {
+            $('#letterVal').val($('#letter').val().charCodeAt(0));
+        }
+        curStep = parseInt(curStep) + 1;
+        $('#Step').val(curStep);
+        //alert($('#Step').val());
+        //alert(curStep);
+        $('#step' + curStep).css('display', 'block');
+        if (curStep == 2) {
+            $('#terms').text('By clicking you acknowledge Dan is a legend.');
+            $('#step' + curStep).text('The ASCII code for your letter is ' + $('#letterVal').val() + '. So the first step is X-42. Do ' + $('#letterVal').val() + '-42.');
+        }
+        if (curStep == 3) {
+            $('#terms').text('By clicking you acknowledge Dan as your one true god.');
+            $('#step' + curStep).text('The next part is 8.756583/X so divide 8.756583 by ' + $('#letterVal').val() + '. Now add the two answers together. This concludes A the 1st line of your equation oooh exciting onto B.');
+        }
+        if (curStep == 4) {
+            $('#terms').text('By clicking you acknowledge bahh you get the idea.');
+        }
+        if (curStep == 5) {
+            $('#terms').text('');
+        }
+        if (curStep == 6) {
+            $('#terms').text('By clicking you reset this site.');
+        }
+        if (curStep == 7) {
+            $('#Step').val(1);
+            $('#letterVal').val('empty');
+            $('#step1').css('display', 'block');
+            $('#terms').text('');
+        }
+        //alert($('#letter').val().charCodeAt(0));
+    }
+</script>

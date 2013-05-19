@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\OAuthTokenManager.cs" />
+    <Compile Include="Controllers\ChrisController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MunchController.cs" />
     <Compile Include="Controllers\OAuthController.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\Images\13959_198875141627_2120386_n.jpg" />
     <Content Include="Content\Images\CurrentLinkedInImage\linkedIn.jpg" />
     <Content Include="Content\Images\Munch\app_icon-20130408-favicon.ico" />
     <Content Include="Content\Images\Munch\Cherry.png" />
@@ -219,6 +221,7 @@
     <Content Include="Views\Munch\Index.cshtml" />
     <Content Include="Views\Munch\GameStart.cshtml" />
     <Content Include="Views\Munch\muchLayout.cshtml" />
+    <Content Include="Views\Chris\index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
