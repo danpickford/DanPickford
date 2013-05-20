@@ -4,7 +4,7 @@ Q.scene("level1", function (stage) {
 
     // Add in a tile layer, and make it the collision layer
     stage.collisionLayer(new Q.TileLayer({
-        dataAsset: 'level1.json',
+        dataAsset: '../../Content/JSON/level1.json',
         sheet: 'tiles'
     }));
 
@@ -17,9 +17,9 @@ Q.scene("level1", function (stage) {
     stage.add("viewport").follow(player);
 
     // Add in a couple of enemies
-    stage.insert(new Q.Enemy({ x: 700, y: 0 }));
-    stage.insert(new Q.Enemy({ x: 800, y: 0 }));
-
+    stage.insert(new Q.Baddy({ x: 700, y: 0 }));
+    stage.insert(new Q.Baddy({ x: 800, y: 0 }));
+    stage.insert(new Q.Baddy({ x: 600, y: 0 }));
     // Finally add in the tower goal
-    stage.insert(new Q.Tower({ x: 180, y: 50 }));
+    stage.insert(new Q.Goal({ x: 180, y: 50 }));
 });

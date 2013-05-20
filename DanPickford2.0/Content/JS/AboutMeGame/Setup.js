@@ -1,4 +1,4 @@
 ﻿var Q = Quintus()
         .include("Sprites, Scenes, Input, 2D, Touch, UI")
-        .setup("myName")
+        .setup("myName", { maximize: true })
         .controls().touch()
