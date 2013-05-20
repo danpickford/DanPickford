@@ -125,6 +125,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\Images\13959_198875141627_2120386_n.jpg" />
+    <Content Include="Content\Images\About\sprites.png" />
+    <Content Include="Content\Images\About\tiles.png" />
     <Content Include="Content\Images\CurrentLinkedInImage\linkedIn.jpg" />
     <Content Include="Content\Images\Munch\app_icon-20130408-favicon.ico" />
     <Content Include="Content\Images\Munch\Cherry.png" />
@@ -148,6 +150,12 @@
     <Content Include="Content\Images\Site\middle1.png" />
     <Content Include="Content\Images\Site\moon.png" />
     <Content Include="Content\Images\Site\sun.png" />
+    <Content Include="Content\JS\AboutMeGame\Baddy.js" />
+    <Content Include="Content\JS\AboutMeGame\Engine.js" />
+    <Content Include="Content\JS\AboutMeGame\Goal.js" />
+    <Content Include="Content\JS\AboutMeGame\Levels.js" />
+    <Content Include="Content\JS\AboutMeGame\Player.js" />
+    <Content Include="Content\JS\AboutMeGame\Setup.js" />
     <Content Include="Content\JS\Munch\Food.js" />
     <Content Include="Content\Images\Munch\Munch_Background1.jpg" />
     <Content Include="Content\Images\Munch\Munch_Eat.png" />
@@ -211,6 +219,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\CV\Daniel_Pickford_Curriculum_Vitae.docx" />
+    <None Include="Content\JSON\level1.json" />
+    <None Include="Content\JSON\sprites.json" />
     <None Include="Properties\PublishProfiles\danpickford.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\danpickford.com - Web Deploy.pubxml" />
     <Content Include="Views\Home\About.cshtml" />
