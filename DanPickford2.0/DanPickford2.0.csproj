@@ -156,6 +156,7 @@
     <Content Include="Content\JS\AboutMeGame\Levels.js" />
     <Content Include="Content\JS\AboutMeGame\Player.js" />
     <Content Include="Content\JS\AboutMeGame\Setup.js" />
+    <Content Include="Content\JS\AboutMeGame\Spring.js" />
     <Content Include="Content\JS\AboutMeGame\Step.js" />
     <Content Include="Content\JS\Munch\Food.js" />
     <Content Include="Content\Images\Munch\Munch_Background1.jpg" />
@@ -221,6 +222,7 @@
   <ItemGroup>
     <Content Include="Content\CV\Daniel_Pickford_Curriculum_Vitae.docx" />
     <None Include="Content\JSON\level1.json" />
+    <Content Include="Content\JSON\level2.json" />
     <None Include="Content\JSON\sprites.json" />
     <None Include="Properties\PublishProfiles\danpickford.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\danpickford.com - Web Deploy.pubxml" />

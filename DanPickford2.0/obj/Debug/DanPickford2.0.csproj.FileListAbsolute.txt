@@ -90,4 +90,3 @@ C:\Development\GitHub\DanPickford\DanPickford2.0\bin\System.Web.WebPages.Deploym
 C:\Development\GitHub\DanPickford\DanPickford2.0\bin\System.Web.WebPages.Razor.xml
 C:\Development\GitHub\DanPickford\DanPickford2.0\obj\Debug\DanPickford2.0.dll
 C:\Development\GitHub\DanPickford\DanPickford2.0\obj\Debug\DanPickford2.0.pdb
-C:\Development\GitHub\DanPickford\DanPickford2.0\obj\Debug\DanPickford2.0.csprojResolveAssemblyReference.cache
