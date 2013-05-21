@@ -156,6 +156,7 @@
     <Content Include="Content\JS\AboutMeGame\Levels.js" />
     <Content Include="Content\JS\AboutMeGame\Player.js" />
     <Content Include="Content\JS\AboutMeGame\Setup.js" />
+    <Content Include="Content\JS\AboutMeGame\Step.js" />
     <Content Include="Content\JS\Munch\Food.js" />
     <Content Include="Content\Images\Munch\Munch_Background1.jpg" />
     <Content Include="Content\Images\Munch\Munch_Eat.png" />
