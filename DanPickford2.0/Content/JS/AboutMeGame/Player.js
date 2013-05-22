@@ -7,8 +7,13 @@ Q.Sprite.extend("Player", {
         this.on("hit.sprite", function (collision) {
             if (collision.obj.isA("Goal")) {
                 Q.clearStages();
-                Q.stageScene("level2", 1);
                 this.destroy();
+                if (Q.state.get("level") == 2) {
+                    Q.stageScene("level3", 1);
+                }
+                if (Q.state.get("level") == 1) {
+                    Q.stageScene("level2", 1);
+                }
             }
         });
     }

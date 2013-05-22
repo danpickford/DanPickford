@@ -1,5 +1,5 @@
 ﻿Q.scene("level1", function (stage) {
-    //30
+    Q.state.set("level", 1);
     // Add in a tile layer, and make it the collision layer
     stage.collisionLayer(new Q.TileLayer({
         dataAsset: '../../Content/JSON/level1.json',

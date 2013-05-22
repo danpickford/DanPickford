@@ -2,12 +2,13 @@
     init: function (p) {
         this._super(p, {
             sheet: 'spring',
-            gravity: 0});
+            gravity: 0,
+            bounce: -600});
         this.add('2d');
 
         this.on("bump.top", function (collision) {
             if (collision.obj.isA("Player")) {
-                collision.obj.p.vy = -600;
+                collision.obj.p.vy = this.p.bounce;
             }
         });
     }
