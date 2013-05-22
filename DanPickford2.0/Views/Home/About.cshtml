@@ -14,7 +14,7 @@
     var pageInt = 1;
     var menuItems = {};
 </script>
-<canvas style="z-index: 2; width: 100%; height: 80%;" id='myName'>
+<canvas style="z-index: 2;" id='myName'>
 </canvas>
 <script src="~/Content/JS/AboutMeGame/Setup.js"></script>
 <script src="~/Content/JS/AboutMeGame/Baddy.js"></script>
@@ -22,7 +22,8 @@
 <script src="~/Content/JS/AboutMeGame/Player.js"></script>
 <script src="~/Content/JS/AboutMeGame/Step.js"></script>
 <script src="~/Content/JS/AboutMeGame/Spring.js"></script>
-<script src="~/Content/JS/AboutMeGame/Levels.js"></script>
+<script src="~/Content/JS/AboutMeGame/Level1.js"></script>
+<script src="~/Content/JS/AboutMeGame/Level2.js"></script>
 <script src="~/Content/JS/AboutMeGame/Engine.js"></script>
 <script>
     $('#myName_container').css('position', 'absolute');
@@ -30,7 +31,8 @@
     $('#myName_container').css('left', '0');
     $('#myName_container').css('width', '100%');
     $('#myName_container').css('height', '80%');
-    $('#myName').css('width', '100%');
-    $('#myName').css('height', '100%');
+    $('#myName_container').css('overflow', 'hidden');
+    //$('#myName').css('width', '100%');
+    //$('#myName').css('height', '100%');
     $("#myName").focus();
 </script>

@@ -1,5 +1,5 @@
-{"player":{"sx":0,"sy":0,"cols":1,"tilew":30,"tileh":30,"frames":1},
-"baddy":{"sx":0,"sy":30,"cols":1,"tilew":30,"tileh":24,"frames":1},
-"goal":{"sx":0,"sy":54,"cols":1,"tilew":30,"tileh":30,"frames":1},
-"step":{"sx":0,"sy":84,"cols":1,"tilew":30,"tileh":30,"frames":1},
-"spring":{"sx":0,"sy":114,"cols":1,"tilew":30,"tileh":30,"frames":1}}
+{"player":{"sx":1,"sy":0,"cols":1,"tilew":28,"tileh":30,"frames":1},
+"baddy":{"sx":4,"sy":30,"cols":1,"tilew":22,"tileh":21,"frames":1},
+"goal":{"sx":0,"sy":52,"cols":1,"tilew":30,"tileh":30,"frames":1},
+"step":{"sx":0,"sy":83,"cols":1,"tilew":30,"tileh":30,"frames":1},
+"spring":{"sx":0,"sy":114,"cols":1,"tilew":30,"tileh":20,"frames":1}}

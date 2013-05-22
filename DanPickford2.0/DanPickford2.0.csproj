@@ -125,6 +125,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\Images\13959_198875141627_2120386_n.jpg" />
+    <Content Include="Content\Images\About\aboutSprite.png" />
     <Content Include="Content\Images\About\sprites.png" />
     <Content Include="Content\Images\About\tiles.png" />
     <Content Include="Content\Images\CurrentLinkedInImage\linkedIn.jpg" />
@@ -145,6 +146,7 @@
     <Content Include="Content\Images\Munch\play_agains.png" />
     <Content Include="Content\Images\Munch\Splash_screen_original.jpg" />
     <Content Include="Content\Images\res1366lowday.jpg" />
+    <Content Include="Content\Images\runningDan.png" />
     <Content Include="Content\Images\Site\dark1.png" />
     <Content Include="Content\Images\Site\light1.png" />
     <Content Include="Content\Images\Site\middle1.png" />
@@ -153,7 +155,8 @@
     <Content Include="Content\JS\AboutMeGame\Baddy.js" />
     <Content Include="Content\JS\AboutMeGame\Engine.js" />
     <Content Include="Content\JS\AboutMeGame\Goal.js" />
-    <Content Include="Content\JS\AboutMeGame\Levels.js" />
+    <Content Include="Content\JS\AboutMeGame\Level1.js" />
+    <Content Include="Content\JS\AboutMeGame\Level2.js" />
     <Content Include="Content\JS\AboutMeGame\Player.js" />
     <Content Include="Content\JS\AboutMeGame\Setup.js" />
     <Content Include="Content\JS\AboutMeGame\Spring.js" />
