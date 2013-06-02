@@ -1,5 +1,8 @@
 ﻿Q.scene("level2", function (stage) {
-
+    if (Q.state.get("Lives") == 0) {
+        Q.state.set("Lives", 3);
+    }
+    $('#LivesDiv').css('display', 'block');
     Q.state.set("level", 2);
     stage.collisionLayer(new Q.TileLayer({
         dataAsset: '../../Content/JSON/level2.json',

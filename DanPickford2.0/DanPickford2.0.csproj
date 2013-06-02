@@ -125,9 +125,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\Images\13959_198875141627_2120386_n.jpg" />
+    <Content Include="Content\Images\aboutDark.jpg" />
+    <Content Include="Content\Images\aboutSunny.jpg" />
     <Content Include="Content\Images\About\aboutSprite.png" />
     <Content Include="Content\Images\About\sprites.png" />
     <Content Include="Content\Images\About\tiles.png" />
+    <Content Include="Content\Images\About\tiles2.png" />
+    <Content Include="Content\Images\About\tiles3.png" />
     <Content Include="Content\Images\CurrentLinkedInImage\linkedIn.jpg" />
     <Content Include="Content\Images\Munch\app_icon-20130408-favicon.ico" />
     <Content Include="Content\Images\Munch\Cherry.png" />
@@ -225,10 +229,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\CV\Daniel_Pickford_Curriculum_Vitae.docx" />
-    <None Include="Content\JSON\level1.json" />
+    <Content Include="Content\JSON\level1.json" />
     <Content Include="Content\JSON\level2.json" />
     <Content Include="Content\JSON\level3.json" />
-    <None Include="Content\JSON\sprites.json" />
+    <Content Include="Content\JSON\sprites.json" />
+    <None Include="Properties\PublishProfiles\DanPickford - FileSystem.pubxml" />
     <None Include="Properties\PublishProfiles\danpickford.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\danpickford.com - Web Deploy.pubxml" />
     <Content Include="Views\Home\About.cshtml" />

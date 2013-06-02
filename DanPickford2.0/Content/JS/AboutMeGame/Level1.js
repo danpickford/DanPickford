@@ -1,30 +1,33 @@
 ﻿Q.scene("level1", function (stage) {
     Q.state.set("level", 1);
+    Q.state.set("Lives", 3);
+    $('#livesLeft').text(Q.state.get("Lives"));
+    $('#LivesDiv').css('display', 'block');
     // Add in a tile layer, and make it the collision layer
     stage.collisionLayer(new Q.TileLayer({
         dataAsset: '../../Content/JSON/level1.json',
         sheet: 'tiles'
     }));
 
-    var label = stage.insert(new Q.UI.Text({
+    stage.insert(new Q.UI.Text({
         x: 230, y: 180,
         label: "13 March 1986, Dan was born.",
         size: 18,
         family: 'Courier New'
     }));
-    var label = stage.insert(new Q.UI.Text({
+    stage.insert(new Q.UI.Text({
         x: 1000, y: -30,
         label: "June 2002 finished Bishop Bell C of E School and Started at Sussex Downs College a GNVQ in ICT.",
         size: 18,
         family: 'Courier New'
     }));
-    var label = stage.insert(new Q.UI.Text({
+    stage.insert(new Q.UI.Text({
         x: 2500, y: 370,
         label: "June 2003 completed GNVQ and started BTEC ICT Pratitioners at Sussex Downs, this is where I discovered programming!",
         size: 18,
         family: 'Courier New'
     }));
-    var label = stage.insert(new Q.UI.Text({
+    stage.insert(new Q.UI.Text({
         x: 3350, y: 154,
         label: "Level 1 complete off to UNI!",
         size: 18,

@@ -12,10 +12,12 @@
 <script src="~/Content/JS/Quintus/quintus_ui.js"></script>
 <script>
     var pageInt = 1;
-    var menuItems = {};
+    var menuItems = {"Up-to-date CV": "'http://www.danpickford.com/Content/CV/Daniel_Pickford_Curriculum_Vitae.docx'"};
 </script>
-<canvas style="z-index: 2;" id='myName'>
-</canvas>
+<div id="LivesDiv" style="position: absolute; top: 20%; left: 35%; font-size: 16px; font-weight:bold; background-color: #fff; display: none; z-index: 50;">Lives:<span id="livesLeft">3</span></div>
+<form id="CV" method="get" action="~/Content/CV/Daniel_Pickford_Curriculum_Vitae.docx">
+    <canvas style="z-index: 2;" id='myName'></canvas>
+</form>
 <script src="~/Content/JS/AboutMeGame/Setup.js"></script>
 <script src="~/Content/JS/AboutMeGame/Baddy.js"></script>
 <script src="~/Content/JS/AboutMeGame/Goal.js"></script>

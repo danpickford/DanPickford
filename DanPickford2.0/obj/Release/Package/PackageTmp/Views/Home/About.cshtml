@@ -2,7 +2,40 @@
     ViewBag.Title = "About";
 }
 <script src="~/Content/JS/about.js"></script>
+<script src="~/Content/JS/jquery-1.9.0.min.js"></script>
+<script src="~/Content/JS/Quintus/quintus.js"></script>
+<script src="~/Content/JS/Quintus/quintus_sprites.js"></script>
+<script src="~/Content/JS/Quintus/quintus_scenes.js"></script>
+<script src="~/Content/JS/Quintus/quintus_input.js"></script>
+<script src="~/Content/JS/Quintus/quintus_2d.js"></script>
+<script src="~/Content/JS/Quintus/quintus_touch.js"></script>
+<script src="~/Content/JS/Quintus/quintus_ui.js"></script>
 <script>
     var pageInt = 1;
-    var menuItems = { };
+    var menuItems = {"Up-to-date CV": "'http://www.danpickford.com/Content/CV/Daniel_Pickford_Curriculum_Vitae.docx'"};
+</script>
+<div id="LivesDiv" style="position: absolute; top: 20%; left: 35%; font-size: 16px; font-weight:bold; background-color: #fff; display: none; z-index: 50;">Lives:<span id="livesLeft">3</span></div>
+<form id="CV" method="get" action="~/Content/CV/Daniel_Pickford_Curriculum_Vitae.docx">
+    <canvas style="z-index: 2;" id='myName'></canvas>
+</form>
+<script src="~/Content/JS/AboutMeGame/Setup.js"></script>
+<script src="~/Content/JS/AboutMeGame/Baddy.js"></script>
+<script src="~/Content/JS/AboutMeGame/Goal.js"></script>
+<script src="~/Content/JS/AboutMeGame/Player.js"></script>
+<script src="~/Content/JS/AboutMeGame/Step.js"></script>
+<script src="~/Content/JS/AboutMeGame/Spring.js"></script>
+<script src="~/Content/JS/AboutMeGame/Level1.js"></script>
+<script src="~/Content/JS/AboutMeGame/Level2.js"></script>
+<script src="~/Content/JS/AboutMeGame/Level3.js"></script>
+<script src="~/Content/JS/AboutMeGame/Engine.js"></script>
+<script>
+    $('#myName_container').css('position', 'absolute');
+    $('#myName_container').css('top', '10%');
+    $('#myName_container').css('left', '0');
+    $('#myName_container').css('width', '100%');
+    $('#myName_container').css('height', '80%');
+    $('#myName_container').css('overflow', 'hidden');
+    //$('#myName').css('width', '100%');
+    //$('#myName').css('height', '100%');
+    $("#myName").focus();
 </script>

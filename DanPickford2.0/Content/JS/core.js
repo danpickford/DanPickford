@@ -179,9 +179,9 @@ function flashFinished(a) {
 
 function isDivisable(a, b) {
     if (a % b == 0) {
-        return true
+        return true;
     } else {
-        return false
+        return false;
     }
 
 }
