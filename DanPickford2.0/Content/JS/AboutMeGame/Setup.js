@@ -6,3 +6,11 @@
 Q.input.keyboardControls({
     Z: "Restart"
 });
+
+Q.input.touchControls({
+    controls: [['left', '<'],
+                 ['right', '>'],
+                 [],
+                 ['action', '^'],
+                 ['Restart', 'z']]
+});
