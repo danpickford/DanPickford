@@ -1,11 +1,6 @@
 ﻿var Q = Quintus()
     .include("Sprites, Scenes, Input, 2D, Touch, UI")
-    .setup("myName", { maximize: true })
-    .controls().touch();
-
-Q.input.keyboardControls({
-    Z: "Restart"
-});
+    .setup("myName", { maximize: true });
 
 Q.input.touchControls({
     controls: [['left', '<'],
@@ -14,3 +9,8 @@ Q.input.touchControls({
                  ['action', '^'],
                  ['Restart', 'z']]
 });
+Q.controls().touch();
+Q.input.keyboardControls({
+    Z: "Restart"
+});
+

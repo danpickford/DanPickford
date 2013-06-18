@@ -12,6 +12,7 @@
     <script>
         var tmenuDescriptor = new menuDescriptor();
     </script>
+     <div id="brightnessSlider" style="width: 4%; height: 0.5%; position: absolute; left: 0; top: 10%; background-color: #ffffff; z-index: 500;">&nbsp;</div>
     <div class="content">
         <div id="headerContainer" class="header">
             <div id="menuSpace" style="float: left; width: 60%; height: 100%; opacity: 0.4; background-color: #000;">&nbsp;</div>
@@ -21,7 +22,7 @@
             <div id="4" style="opacity: 0;" class="MenuItem" onclick="clickDown(4,'@Url.Action("Project")');"><span style="padding-left: 15px;">Projects</span></div>
         </div>
         <div id="divBody" class="main" style="background-image: url('../Content/Images/res1366low.jpg');">
-                        <div id="divBodyDay" class="main" style="background-image: url('../Content/Images/res1366lowday.jpg'); position: absolute; left: 0; top: 0; opacity: 0;">
+            <div id="divBodyDay" class="main" style="background-image: url('../Content/Images/res1366lowday.jpg'); position: absolute; left: 0; top: 0; opacity: 0;">
                 &nbsp;
             </div>
             @Html.Partial("SiteMenuInteraction");
@@ -41,10 +42,13 @@
             <img src="http://www.linkedin.com/img/webpromo/btn_profile_bluetxt_80x15.png" width="80" height="15" border="0" alt="View Daniel Pickford's profile on LinkedIn">
         </a>
     </div>
-    <div id="moonandsun" style="position: absolute; left:0; top:0; width: 100%; padding-top: 1.5%;">
-        <div style="float: left; width: 27%; padding-left: 1%;"><img src="~/Content/Images/Site/dark1.png" /></div>
-        <div style="float: left; width: 27%; padding-left: 1%;"><img src="~/Content/Images/Site/middle1.png" /></div>
-        <div style="float: left; width: 20%; padding-left: 1%;"><img src="~/Content/Images/Site/light1.png" /></div>
+    <div id="moonandsun" style="position: absolute; left: 0; top: 0; width: 100%; padding-top: 1.5%;">
+        <div style="float: left; width: 27%; padding-left: 1%;">
+            <img src="~/Content/Images/Site/dark1.png" /></div>
+        <div style="float: left; width: 27%; padding-left: 1%;">
+            <img src="~/Content/Images/Site/middle1.png" /></div>
+        <div style="float: left; width: 20%; padding-left: 1%;">
+            <img src="~/Content/Images/Site/light1.png" /></div>
     </div>
 </body>
 </html>
