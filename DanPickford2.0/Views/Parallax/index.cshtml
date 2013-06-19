@@ -17,14 +17,34 @@
     <script src="~/Content/JS/Parallax/Parallax.js"></script>
 </head>
 <body>
+    <div class="linkedIn">
+        <a href="http://au.linkedin.com/pub/daniel-pickford/3b/236/326" style="text-decoration: none;">
+            <img src="~/Content/Images/CurrentLinkedInImage/linkedIn.jpg" style="border: 0px; height: auto; width: 105px;" /></a>
+    </div>
+    <div class="linkedIn" style="background-color: #fff;">
+        <a href="http://au.linkedin.com/pub/daniel-pickford/3b/236/326">
+            <img src="http://www.linkedin.com/img/webpromo/btn_profile_bluetxt_80x15.png" width="80" height="15" border="0" alt="View Daniel Pickford's profile on LinkedIn">
+        </a>
+    </div>
+
     <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-        &nbsp;
-            <a class="button" data-slide="2" title=""></a>
+        <span id="Written1" class="Written" data-stellar-ratio="0.1" data-stellar-vertical-offset="-102">This is a demonstration of <a class="link" href="http://en.wikipedia.org/wiki/Parallax">Parallaxing</a>. I created this so that I could learn how it's done.</span>
+        <span id="Written2" class="Written" data-stellar-ratio="0.1" data-stellar-vertical-offset="-102">How awesome is this!?!</span>
+        <span id="Written3" class="Written" data-stellar-ratio="2" data-stellar-vertical-offset="-102">So using this on the next website I make. Look at this text it's moving faster than the rest! ... When you scroll, naturally.</span>
+        <a class="button" data-slide="2" title=""></a>
     </div>
     <!--End Slide 1-->
-    <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="2">
-        &nbsp;
-            <a class="button" data-slide="3" title=""></a>
+    <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+        <div class="wrapper">
+            <img src="~/Content/Images/Munch/Munch.png" data-stellar-ratio="1.4" data-stellar-vertical-offset="-102" alt="">
+            <img src="~/Content/Images/Munch/Doughnut.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-53" alt="">
+            <img src="~/Content/Images/Munch/Chicken_Leg.png" data-stellar-ratio="2.7" data-stellar-vertical-offset="-200" alt="">
+            <img src="~/Content/Images/Munch/Munch_Eat.png" data-stellar-ratio="3" data-stellar-vertical-offset="-200" alt="">
+            <img src="~/Content/Images/Munch/Pizza.png" data-stellar-ratio="1" data-stellar-vertical-offset="-200" alt="">
+            <img src="~/Content/Images/Munch/Munch_Sad.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-200" alt="">
+        </div>
+        <span id="Written4" class="Written">Parallaxing is all over the place these days, adding <a class="link" href="@Url.Action("Index", "Munch")"> Munch</a>into the mix.</span>
+        <a class="button" data-slide="3" title=""></a>
     </div>
     <!--End Slide 2-->
     <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.1">
@@ -36,9 +56,9 @@
         &nbsp;
         <div id="footer">
             <div id="footerWrapper">
-                Developed with <a class="footerlink" href="http://jquery.com/">JQuery</a>, <a class="footerlink" href="http://markdalgleish.com/projects/stellar.js/">Stellar.js</a>, <a class="footerlink" href="http://imakewebthings.com/jquery-waypoints/">Waypoints</a> and <a class="footerlink" href="http://gsgd.co.uk/sandbox/jquery/easing/">Easing</a>
+                Developed with <a class="link" href="http://jquery.com/">JQuery</a>, <a class="link" href="http://markdalgleish.com/projects/stellar.js/">Stellar.js</a>, <a class="link" href="http://imakewebthings.com/jquery-waypoints/">Waypoints</a> and <a class="link" href="http://gsgd.co.uk/sandbox/jquery/easing/">Easing</a>
                 <br />
-                <a class="footerlink" href="~/Home">danpickford.com</a>
+                <a class="link" href="~/Home">danpickford.com</a>
             </div>
         </div>
     </div>
