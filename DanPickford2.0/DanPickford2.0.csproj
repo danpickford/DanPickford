@@ -112,6 +112,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MunchController.cs" />
     <Compile Include="Controllers\OAuthController.cs" />
+    <Compile Include="Controllers\ParallaxController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -149,6 +150,7 @@
     <Content Include="Content\Images\Munch\Pizza_Original.png" />
     <Content Include="Content\Images\Munch\play_agains.png" />
     <Content Include="Content\Images\Munch\Splash_screen_original.jpg" />
+    <Content Include="Content\Images\Parallax\downarrow.png" />
     <Content Include="Content\Images\res1366lowday.jpg" />
     <Content Include="Content\Images\runningDan.png" />
     <Content Include="Content\Images\Site\dark1.png" />
@@ -174,12 +176,16 @@
     <Content Include="Content\Images\Munch\Pizza.png" />
     <Content Include="Content\Images\Munch\Splash_screen.jpg" />
     <Content Include="Content\Images\res1366low.jpg" />
-    <Content Include="Content\JS\about.js" />
-    <Content Include="Content\JS\core.js" />
-    <Content Include="Content\JS\danDev.js" />
-    <Content Include="Content\JS\index.js" />
+    <Content Include="Content\JS\Parallax\jquery.easing.min.js" />
+    <Content Include="Content\JS\Parallax\jquery.stellar.min.js" />
+    <Content Include="Content\JS\Parallax\Parallax.js" />
+    <Content Include="Content\JS\Parallax\waypoints.min.js" />
+    <Content Include="Content\JS\Site\about.js" />
+    <Content Include="Content\JS\Site\core.js" />
+    <Content Include="Content\JS\Site\danDev.js" />
+    <Content Include="Content\JS\Site\index.js" />
     <Content Include="Content\JS\jquery-1.9.0.min.js" />
-    <Content Include="Content\JS\menu.js" />
+    <Content Include="Content\JS\Site\menu.js" />
     <Content Include="Content\JS\Munch\Engine.js" />
     <Content Include="Content\JS\Munch\Floor.js" />
     <Content Include="Content\JS\Munch\Levels.js" />
@@ -187,7 +193,7 @@
     <Content Include="Content\JS\Munch\Setup.js" />
     <Content Include="Content\JS\Munch\Munch.js" />
     <Content Include="Content\JS\Munch\MouseDetect.js" />
-    <Content Include="Content\JS\projects.js" />
+    <Content Include="Content\JS\Site\projects.js" />
     <Content Include="Content\JS\Quintus\quintus.js" />
     <Content Include="Content\JS\Quintus\quintus_2d.js" />
     <Content Include="Content\JS\Quintus\quintus_anim.js" />
@@ -199,6 +205,7 @@
     <Content Include="Content\JS\Quintus\quintus_ui.js" />
     <Content Include="Content\JS\Site\backblender.js" />
     <Content Include="Content\Styles\munch.css" />
+    <Content Include="Content\Styles\parallax.css" />
     <Content Include="Content\Styles\Style1.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -245,6 +252,7 @@
     <Content Include="Views\Munch\GameStart.cshtml" />
     <Content Include="Views\Munch\muchLayout.cshtml" />
     <Content Include="Views\Chris\index.cshtml" />
+    <Content Include="Views\Parallax\index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
