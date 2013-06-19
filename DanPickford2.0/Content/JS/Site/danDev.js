@@ -1,3 +1,1 @@
-﻿function MenuSplashDown() {
-    alert('test');
-}
+﻿

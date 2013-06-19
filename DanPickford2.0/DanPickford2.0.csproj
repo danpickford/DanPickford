@@ -151,6 +151,9 @@
     <Content Include="Content\Images\Munch\play_agains.png" />
     <Content Include="Content\Images\Munch\Splash_screen_original.jpg" />
     <Content Include="Content\Images\Parallax\downarrow.png" />
+    <Content Include="Content\Images\Parallax\largeStar.png" />
+    <Content Include="Content\Images\Parallax\medStar.png" />
+    <Content Include="Content\Images\Parallax\smlStar.png" />
     <Content Include="Content\Images\res1366lowday.jpg" />
     <Content Include="Content\Images\runningDan.png" />
     <Content Include="Content\Images\Site\dark1.png" />

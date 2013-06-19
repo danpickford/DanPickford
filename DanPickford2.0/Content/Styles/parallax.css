@@ -81,6 +81,19 @@
         cursor: pointer;
     }
 
+.linkDark
+{
+    text-decoration: none;
+    color: #447003;
+}
+
+    .linkDark:hover
+    {
+        color: #d3d3d3;
+        background-color: #447003;
+        cursor: pointer;
+    }
+
 .linkedIn
 {
     position: fixed;
@@ -104,7 +117,7 @@
 #Written2
 {
     position:absolute;
-    top: 52%;
+    top: 53%;
     left: 180px;
 }
 #Written3
@@ -144,31 +157,7 @@
     background-size: cover;
 }
 
-#slide2 img:first-child{
-    position:absolute;
-top: 700px;
-left: -150px;
-}
-#slide2 img:nth-child(2){
-    position:absolute;
-    top:300px;
-    left:100px;
-}
-#slide2 img:nth-child(3){
-    position:absolute;
-    top:600px;
-    left:300px;
-}
-#slide2 img:nth-child(4){
-    position:absolute;
-    top:400px;
-    left:300px;
-}
-#slide2 img:nth-child(5){
-    position:absolute;
-    top:600px;
-    right:300px;
-}
+
 /******************************
  SLIDE 3
 *******************************/
@@ -181,10 +170,36 @@ left: -150px;
     -o-background-size: cover;
     background-size: cover;
 }
+#slide3 img:first-child{
+    position:absolute;
+    top: 50%;
+    left: 250px;
+}
+#slide3 img:nth-child(2){
+    position:absolute;
+    top:10%;
+    left:100px;
+}
+#slide3 img:nth-child(3){
+    position:absolute;
+    top:25%;
+    left:300px;
+}
+#slide3 img:nth-child(4){
+    position:absolute;
+    top:15%;
+    left:300px;
+}
+#slide3 img:nth-child(5){
+    position:absolute;
+    top:80%;
+    right:300px;
+}
 /******************************
  SLIDE 4
 *******************************/
 #slide4
 {
+
     background-color: #b10000;
 }
