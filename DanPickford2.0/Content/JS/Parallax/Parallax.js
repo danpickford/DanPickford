@@ -10,7 +10,8 @@
 
 function runSetup(type) {
     if (type == 'mobile') {
-        $('#Written2').html('Ahh i see you are using a mobile device... switched to a mobile friendly version for you. (Better on PC)')
+        $('#Written2').html('Ahh i see you are using a mobile device... switched to a mobile friendly version for you. (Better on PC)');
+        $('#Written2').css('top', '10px');
         $('#slide1').attr('id', 'mslide1');
         $('#slide2').attr('id', 'mslide2');
         $('#slide3').attr('id', 'mslide3');
@@ -20,7 +21,7 @@ function runSetup(type) {
             scrollProperty: 'transform',
             positionProperty: 'transform',
             horizontalScrolling: false,
-            verticalOffset: 150
+            verticalScrolling: true
         });
     }
     //initialise Stellar.js
