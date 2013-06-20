@@ -16,13 +16,13 @@ function runSetup(type) {
         $('#slide2').attr('id', 'mslide2');
         $('#slide3').attr('id', 'mslide3');
         $('html').addClass('mobile');
-        iScrollInstance = new iScroll('scroller');
-        $('#scroller').stellar({
-            scrollProperty: 'transform',
-            positionProperty: 'transform',
-            horizontalScrolling: false,
-            verticalScrolling: true
-        });
+        iScrollInstance = new iScroll('wrapper');
+        //$('#scroller').stellar({
+        //    scrollProperty: 'transform',
+        //    positionProperty: 'transform',
+        //    horizontalScrolling: false,
+        //    verticalOffset: 150
+        //});
     }
     //initialise Stellar.js
     $(window).stellar();
