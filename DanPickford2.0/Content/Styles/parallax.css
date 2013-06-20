@@ -14,22 +14,12 @@
     box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
 }
 
-.wrapper
+.container
 {
     width: 960px;
     height: 200px;
     margin: 0 auto;
     position: relative;
-}
-
-.slideno
-{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    font-size: 100px;
-    font-weight: bold;
-    color: rgba(255,255,255,0.3);
 }
 
 .button
@@ -144,6 +134,10 @@
     -o-background-size: cover;
     background-size: cover;
 }
+#mslide1
+{
+    background-color:#5c9900;
+}
 /******************************
  SLIDE 2
 *******************************/
@@ -156,7 +150,10 @@
     -o-background-size: cover;
     background-size: cover;
 }
-
+#mslide2
+{
+    background-color:#ccd82f;
+}
 
 /******************************
  SLIDE 3
@@ -195,6 +192,34 @@
     top:80%;
     right:300px;
 }
+#mslide3 {
+    background-color:#ff6a00;
+}
+#mslide3 img:first-child{
+    position:absolute;
+    top: 50%;
+    left: 250px;
+}
+#mslide3 img:nth-child(2){
+    position:absolute;
+    top:10%;
+    left:100px;
+}
+#mslide3 img:nth-child(3){
+    position:absolute;
+    top:25%;
+    left:300px;
+}
+#mslide3 img:nth-child(4){
+    position:absolute;
+    top:15%;
+    left:300px;
+}
+#mslide3 img:nth-child(5){
+    position:absolute;
+    top:80%;
+    right:300px;
+}
 /******************************
  SLIDE 4
 *******************************/
@@ -202,4 +227,19 @@
 {
 
     background-color: #b10000;
+}
+.mobile body {
+  overflow: hidden;
+}
+
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mobile #scroller {
+  height: 3000px;
 }

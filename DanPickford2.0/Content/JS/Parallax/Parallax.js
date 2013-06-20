@@ -2,7 +2,6 @@
     var ua = navigator.userAgent,
         isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
     if (isMobileWebkit) {
-        alert("Sorry I'm still working on adding Mobile/Tablet support... it's... complicated.");
         runSetup('mobile');
     } else {
         runSetup('normal');
@@ -10,7 +9,20 @@
 });
 
 function runSetup(type) {
-
+    if (type == 'mobile') {
+        $('#Written2').html('Ahh i see you are using a mobile device... switched to a mobile friendly version for you. (Better on PC)')
+        $('#slide1').attr('id', 'mslide1');
+        $('#slide2').attr('id', 'mslide2');
+        $('#slide3').attr('id', 'mslide3');
+        $('html').addClass('mobile');
+        iScrollInstance = new iScroll('scroller');
+        $('#scroller').stellar({
+            scrollProperty: 'transform',
+            positionProperty: 'transform',
+            horizontalScrolling: false,
+            verticalOffset: 150
+        });
+    }
     //initialise Stellar.js
     $(window).stellar();
     //Cache some variables

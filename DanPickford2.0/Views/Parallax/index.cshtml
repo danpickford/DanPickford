@@ -6,7 +6,7 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
     <link href="~/Content/Styles/parallax.css" rel="stylesheet" />
     <title>Dan in Parallax</title>
@@ -14,119 +14,124 @@
     <script src="~/Content/JS/Parallax/jquery.stellar.min.js"></script>
     <script src="~/Content/JS/Parallax/waypoints.min.js"></script>
     <script src="~/Content/JS/Parallax/jquery.easing.min.js"></script>
+    <script src="~/Content/JS/Parallax/iscroll-lite.js"></script>
     <script src="~/Content/JS/Parallax/Parallax.js"></script>
 </head>
 <body>
-    <div class="linkedIn">
-        <a href="http://au.linkedin.com/pub/daniel-pickford/3b/236/326" style="text-decoration: none;">
-            <img src="~/Content/Images/CurrentLinkedInImage/linkedIn.jpg" style="border: 0px; height: auto; width: 105px;" /></a>
-    </div>
-    <div class="linkedIn" style="background-color: #fff;">
-        <a href="http://au.linkedin.com/pub/daniel-pickford/3b/236/326">
-            <img src="http://www.linkedin.com/img/webpromo/btn_profile_bluetxt_80x15.png" width="80" height="15" border="0" alt="View Daniel Pickford's profile on LinkedIn">
-        </a>
-    </div>
+    <div id="wrapper" style="width: 100%; height: 100%;">
+        <div id="scroller" style="width: 100%; height: 100%;">
+            <div class="linkedIn">
+                <a href="http://au.linkedin.com/pub/daniel-pickford/3b/236/326" style="text-decoration: none;">
+                    <img src="~/Content/Images/CurrentLinkedInImage/linkedIn.jpg" style="border: 0px; height: auto; width: 105px;" /></a>
+            </div>
+            <div class="linkedIn" style="background-color: #fff;">
+                <a href="http://au.linkedin.com/pub/daniel-pickford/3b/236/326">
+                    <img src="http://www.linkedin.com/img/webpromo/btn_profile_bluetxt_80x15.png" width="80" height="15" border="0" alt="View Daniel Pickford's profile on LinkedIn">
+                </a>
+            </div>
 
-    <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.1 ">
-        <span id="Written1" class="Written" data-stellar-ratio="0.1">This is a demonstration of <a class="linkDark" href="http://en.wikipedia.org/wiki/Parallax">Parallaxing</a>. I created this so that I could learn how it is done.</span>
-        <span id="Written2" class="Written" data-stellar-ratio="0.1">How awesome is this!?!</span>
-        <span id="Written3" class="Written" data-stellar-ratio="2">Look at this text it's moving faster than the rest! ... When you scroll.</span>
-        <a class="button" data-slide="2" title=""></a>
-    </div>
-    <!--End Slide 1-->
-    <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-        <div style="position: relative; top: 0; left: 0; width: 100%; height: 85%;">
-            <!--Y-->
-            <img style="position: absolute; top: 265px; left: 110px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="5.4" alt="">
-            <img style="position: absolute; top: 265px; left: 130px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 280px; left: 118px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.4" alt="">
-            <img style="position: absolute; top: 300px; left: 120px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
-            <img style="position: absolute; top: 315px; left: 115px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 340px; left: 120px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.35" alt="">
-            <img style="position: absolute; top: 355px; left: 115px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
-            <img style="position: absolute; top: 380px; left: 120px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
-            <img style="position: absolute; top: 250px; left: 100px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
-            <img style="position: absolute; top: 250px; left: 140px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 230px; left: 150px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.4" alt="">
-            <img style="position: absolute; top: 235px; left: 90px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="4.12" alt="">
-            <img style="position: absolute; top: 220px; left: 160px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 215px; left: 75px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="4.4" alt="">
-            <!--O-->
-            <img style="position: absolute; top: 220px; left: 260px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="5.4" alt="">
-            <img style="position: absolute; top: 232px; left: 290px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 245px; left: 310px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.4" alt="">
-            <img style="position: absolute; top: 260px; left: 330px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
-            <img style="position: absolute; top: 275px; left: 328px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 299px; left: 330px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.35" alt="">
-            <img style="position: absolute; top: 320px; left: 320px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
-            <img style="position: absolute; top: 340px; left: 310px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
-            <img style="position: absolute; top: 350px; left: 290px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
-            <img style="position: absolute; top: 365px; left: 260px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
-            <img style="position: absolute; top: 232px; left: 230px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 245px; left: 210px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.4" alt="">
-            <img style="position: absolute; top: 260px; left: 195px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
-            <img style="position: absolute; top: 275px; left: 190px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 299px; left: 195px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.35" alt="">
-            <img style="position: absolute; top: 320px; left: 205px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
-            <img style="position: absolute; top: 340px; left: 215px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
-            <img style="position: absolute; top: 350px; left: 226px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
-            <!--L-->
-            <img style="position: absolute; top: 265px; left: 375px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 280px; left: 375px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.4" alt="">
-            <img style="position: absolute; top: 300px; left: 375px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
-            <img style="position: absolute; top: 315px; left: 375px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 340px; left: 375px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.35" alt="">
-            <img style="position: absolute; top: 355px; left: 375px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
-            <img style="position: absolute; top: 380px; left: 375px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
-            <img style="position: absolute; top: 250px; left: 375px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
-            <img style="position: absolute; top: 230px; left: 375px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.4" alt="">
-            <img style="position: absolute; top: 380px; left: 395px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="5.4" alt="">
-            <img style="position: absolute; top: 375px; left: 415px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="7.1" alt="">
-            <img style="position: absolute; top: 378px; left: 438px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="10" alt="">
-            <img style="position: absolute; top: 380px; left: 452px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="1.9" alt="">
-            <!--O-->
-            <img style="position: absolute; top: 220px; left: 560px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="4.4" alt="">
-            <img style="position: absolute; top: 232px; left: 590px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 245px; left: 610px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.4" alt="">
-            <img style="position: absolute; top: 260px; left: 630px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
-            <img style="position: absolute; top: 275px; left: 628px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 299px; left: 630px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.35" alt="">
-            <img style="position: absolute; top: 320px; left: 620px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
-            <img style="position: absolute; top: 340px; left: 610px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
-            <img style="position: absolute; top: 350px; left: 590px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="6.1" alt="">
-            <img style="position: absolute; top: 365px; left: 560px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
-            <img style="position: absolute; top: 232px; left: 530px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 245px; left: 510px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.4" alt="">
-            <img style="position: absolute; top: 260px; left: 495px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
-            <img style="position: absolute; top: 275px; left: 490px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
-            <img style="position: absolute; top: 299px; left: 495px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="5.35" alt="">
-            <img style="position: absolute; top: 320px; left: 505px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
-            <img style="position: absolute; top: 340px; left: 515px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
-            <img style="position: absolute; top: 350px; left: 526px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="9.1" alt="">
-        </div>
-        
-        <a class="button" data-slide="3" title=""></a>
-    </div>
-    <!--End Slide 2-->
-    <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.1">
-        <div class="wrapper">
-            <img src="~/Content/Images/Munch/Munch.png" data-stellar-ratio="1.4" data-stellar-vertical-offset="-102" alt="">
-            <img src="~/Content/Images/Munch/Doughnut.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-53" alt="">
-            <img src="~/Content/Images/Munch/Chicken_Leg.png" data-stellar-ratio="2.7" data-stellar-vertical-offset="-200" alt="">
-            <img src="~/Content/Images/Munch/Munch_Eat.png" data-stellar-ratio="3" data-stellar-vertical-offset="-200" alt="">
-            <img src="~/Content/Images/Munch/Pizza.png" data-stellar-ratio="1" data-stellar-vertical-offset="-200" alt="">
-            <img src="~/Content/Images/Munch/Munch_Sad.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-200" alt="">
-        </div>
-        <span id="Written4" class="Written">Parallaxing is all over the place these days, adding <a class="linkDark" href="@Url.Action("Index", "Munch")">Munch</a> into the mix.</span>
-        <a class="button" data-slide="4" title=""></a>
-    </div>
-    <!--End Slide 3-->
-    <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="1.5">
-        <div id="footer">
-            <div id="footerWrapper">
-                Developed with <a class="link" href="http://jquery.com/">JQuery</a>, <a class="link" href="http://markdalgleish.com/projects/stellar.js/">Stellar.js</a>, <a class="link" href="http://imakewebthings.com/jquery-waypoints/">Waypoints</a> and <a class="link" href="http://gsgd.co.uk/sandbox/jquery/easing/">Easing</a>
-                <br />
-                <a class="link" href="~/Home">danpickford.com</a>
+            <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.1 ">
+                <span id="Written1" class="Written" data-stellar-ratio="0.1">This is a demonstration of <a class="linkDark" href="http://en.wikipedia.org/wiki/Parallax">Parallaxing</a>. I created this so that I could learn how it is done.</span>
+                <span id="Written2" class="Written" data-stellar-ratio="0.1">How awesome is this!?!</span>
+                <span id="Written3" class="Written" data-stellar-ratio="2">Look at this text it's moving faster than the rest! ... When you scroll.</span>
+                <a class="button" data-slide="2" title=""></a>
+            </div>
+            <!--End Slide 1-->
+            <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+                <div style="position: relative; top: 0; left: 0; width: 100%; height: 85%;">
+                    <!--Y-->
+                    <img style="position: absolute; top: 265px; left: 110px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="5.4" alt="">
+                    <img style="position: absolute; top: 265px; left: 130px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 280px; left: 118px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.4" alt="">
+                    <img style="position: absolute; top: 300px; left: 120px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
+                    <img style="position: absolute; top: 315px; left: 115px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 340px; left: 120px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.35" alt="">
+                    <img style="position: absolute; top: 355px; left: 115px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
+                    <img style="position: absolute; top: 380px; left: 120px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
+                    <img style="position: absolute; top: 250px; left: 100px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
+                    <img style="position: absolute; top: 250px; left: 140px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 230px; left: 150px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.4" alt="">
+                    <img style="position: absolute; top: 235px; left: 90px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="4.12" alt="">
+                    <img style="position: absolute; top: 220px; left: 160px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 215px; left: 75px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="4.4" alt="">
+                    <!--O-->
+                    <img style="position: absolute; top: 220px; left: 260px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="5.4" alt="">
+                    <img style="position: absolute; top: 232px; left: 290px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 245px; left: 310px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.4" alt="">
+                    <img style="position: absolute; top: 260px; left: 330px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
+                    <img style="position: absolute; top: 275px; left: 328px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 299px; left: 330px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.35" alt="">
+                    <img style="position: absolute; top: 320px; left: 320px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
+                    <img style="position: absolute; top: 340px; left: 310px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
+                    <img style="position: absolute; top: 350px; left: 290px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
+                    <img style="position: absolute; top: 365px; left: 260px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
+                    <img style="position: absolute; top: 232px; left: 230px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 245px; left: 210px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.4" alt="">
+                    <img style="position: absolute; top: 260px; left: 195px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
+                    <img style="position: absolute; top: 275px; left: 190px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 299px; left: 195px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.35" alt="">
+                    <img style="position: absolute; top: 320px; left: 205px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
+                    <img style="position: absolute; top: 340px; left: 215px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
+                    <img style="position: absolute; top: 350px; left: 226px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
+                    <!--L-->
+                    <img style="position: absolute; top: 265px; left: 375px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 280px; left: 375px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.4" alt="">
+                    <img style="position: absolute; top: 300px; left: 375px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
+                    <img style="position: absolute; top: 315px; left: 375px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 340px; left: 375px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.35" alt="">
+                    <img style="position: absolute; top: 355px; left: 375px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
+                    <img style="position: absolute; top: 380px; left: 375px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
+                    <img style="position: absolute; top: 250px; left: 375px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
+                    <img style="position: absolute; top: 230px; left: 375px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="4.4" alt="">
+                    <img style="position: absolute; top: 380px; left: 395px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="5.4" alt="">
+                    <img style="position: absolute; top: 375px; left: 415px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="7.1" alt="">
+                    <img style="position: absolute; top: 378px; left: 438px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="10" alt="">
+                    <img style="position: absolute; top: 380px; left: 452px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="1.9" alt="">
+                    <!--O-->
+                    <img style="position: absolute; top: 220px; left: 560px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="4.4" alt="">
+                    <img style="position: absolute; top: 232px; left: 590px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 245px; left: 610px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.4" alt="">
+                    <img style="position: absolute; top: 260px; left: 630px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
+                    <img style="position: absolute; top: 275px; left: 628px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 299px; left: 630px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="7.35" alt="">
+                    <img style="position: absolute; top: 320px; left: 620px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
+                    <img style="position: absolute; top: 340px; left: 610px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
+                    <img style="position: absolute; top: 350px; left: 590px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="6.1" alt="">
+                    <img style="position: absolute; top: 365px; left: 560px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.1" alt="">
+                    <img style="position: absolute; top: 232px; left: 530px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 245px; left: 510px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="3.4" alt="">
+                    <img style="position: absolute; top: 260px; left: 495px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="2.4" alt="">
+                    <img style="position: absolute; top: 275px; left: 490px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="6.4" alt="">
+                    <img style="position: absolute; top: 299px; left: 495px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="5.35" alt="">
+                    <img style="position: absolute; top: 320px; left: 505px;" src="~/Content/Images/Parallax/largeStar.png" data-stellar-ratio="3.4" alt="">
+                    <img style="position: absolute; top: 340px; left: 515px;" src="~/Content/Images/Parallax/smlStar.png" data-stellar-ratio="3.6" alt="">
+                    <img style="position: absolute; top: 350px; left: 526px;" src="~/Content/Images/Parallax/medStar.png" data-stellar-ratio="9.1" alt="">
+                </div>
+
+                <a class="button" data-slide="3" title=""></a>
+            </div>
+            <!--End Slide 2-->
+            <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.1">
+                <div class="container">
+                    <img src="~/Content/Images/Munch/Munch.png" data-stellar-ratio="1.4" data-stellar-vertical-offset="-102" alt="">
+                    <img src="~/Content/Images/Munch/Doughnut.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-53" alt="">
+                    <img src="~/Content/Images/Munch/Chicken_Leg.png" data-stellar-ratio="2.7" data-stellar-vertical-offset="-200" alt="">
+                    <img src="~/Content/Images/Munch/Munch_Eat.png" data-stellar-ratio="3" data-stellar-vertical-offset="-200" alt="">
+                    <img src="~/Content/Images/Munch/Pizza.png" data-stellar-ratio="1" data-stellar-vertical-offset="-200" alt="">
+                    <img src="~/Content/Images/Munch/Munch_Sad.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-200" alt="">
+                </div>
+                <span id="Written4" class="Written">Parallaxing is all over the place these days, adding <a class="linkDark" href="@Url.Action("Index", "Munch")">Munch</a> into the mix.</span>
+                <a class="button" data-slide="4" title=""></a>
+            </div>
+            <!--End Slide 3-->
+            <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="1.5">
+                <div id="footer">
+                    <div id="footerWrapper">
+                        Developed with <a class="link" href="http://jquery.com/">JQuery</a>, <a class="link" href="http://markdalgleish.com/projects/stellar.js/">Stellar.js</a>, <a class="link" href="http://imakewebthings.com/jquery-waypoints/">Waypoints</a> and <a class="link" href="http://gsgd.co.uk/sandbox/jquery/easing/">Easing</a>
+                        <br />
+                        <a class="link" href="~/Home">danpickford.com</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

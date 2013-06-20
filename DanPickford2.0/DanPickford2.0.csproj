@@ -179,6 +179,7 @@
     <Content Include="Content\Images\Munch\Pizza.png" />
     <Content Include="Content\Images\Munch\Splash_screen.jpg" />
     <Content Include="Content\Images\res1366low.jpg" />
+    <Content Include="Content\JS\Parallax\iscroll-lite.js" />
     <Content Include="Content\JS\Parallax\jquery.easing.min.js" />
     <Content Include="Content\JS\Parallax\jquery.stellar.min.js" />
     <Content Include="Content\JS\Parallax\Parallax.js" />
