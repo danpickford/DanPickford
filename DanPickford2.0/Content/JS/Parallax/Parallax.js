@@ -15,24 +15,31 @@ function runSetup(type) {
         $('#slide1').attr('id', 'mslide1');
         $('#slide2').attr('id', 'mslide2');
         $('#slide3').attr('id', 'mslide3');
+        $('#YOLOdiv').attr('id', 'mYOLOdiv');
         $('html').addClass('mobile');
-        iScrollInstance = new iScroll('wrapper');
-        //$('#scroller').stellar({
-        //    scrollProperty: 'transform',
-        //    positionProperty: 'transform',
-        //    horizontalScrolling: false,
-        //    verticalOffset: 150
-        //});
+    } else {
+        (function () {
+            var timer;
+            $(window).bind('scroll', function () {
+                clearTimeout(timer);
+                timer = setTimeout(refresh, 1000);
+            });
+            var refresh = function () {
+                goToByScroll(dataslide, 500);
+            };
+        })();
     }
     //initialise Stellar.js
-    $(window).stellar();
+    $(window).stellar({
+        horizontalScrolling: false
+    });
+
     //Cache some variables
     slide = $('.slide');
     button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
     dataslide = 1;
-    scrolling = false;
     //Setup waypoints plugin
     slide.waypoint(function (event) {
         //cache the variable of the data-slide attribute associated with each slide
@@ -45,17 +52,6 @@ function runSetup(type) {
             }
         }
     });
-
-    (function () {
-        var timer;
-        $(window).bind('scroll', function () {
-            clearTimeout(timer);
-            timer = setTimeout(refresh, 1000);
-        });
-        var refresh = function () {
-            goToByScroll(dataslide, 500);
-        };
-    })();
 
     //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
