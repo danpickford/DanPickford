@@ -1,6 +1,7 @@
 ﻿jQuery(document).ready(function ($) {
     var ua = navigator.userAgent,
-        isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
+        isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua) || /Nexus/.test(ua);
+    //$('#Written3').html('Browser information:' + ua);
     if (isMobileWebkit) {
         runSetup('mobile');
     } else {

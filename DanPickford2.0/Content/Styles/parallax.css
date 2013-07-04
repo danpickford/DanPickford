@@ -50,6 +50,7 @@
 
 #footerWrapper {
     width: 75%;
+    overflow: hidden;
 }
 
 .link {
@@ -122,7 +123,12 @@
 }
 
 #mslide1 {
-    background-color: #5c9900;
+    /*background-color: #5c9900;*/
+    background-image: url(../Images/res1366lowday.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 /******************************
  SLIDE 2
@@ -137,7 +143,12 @@
 }
 
 #mslide2 {
-    background-color: #ccd82f;
+    /*background-color: #ccd82f;*/
+    background-image: url(../Images/res1366low.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /******************************
@@ -156,8 +167,8 @@
     position: absolute;
     top: 10%;
     left: 10%;
-    width: 50%;
-    height: 50%;
+    width: 10%;
+    height: auto;
 }
 
 #slide3 img:nth-child(2) {
@@ -190,42 +201,59 @@
 }
 
 #mslide3 {
-    background-color: #ff6a00;
+    /*background-color: #ff6a00;*/
+    background-image: url(../Images/aboutSunny.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #mslide3 img:first-child {
     position: absolute;
     top: 10%;
     left: 10%;
+    width: 10%;
+    height: auto;
 }
 
 #mslide3 img:nth-child(2) {
     position: absolute;
     top: 20%;
     left: 20%;
+    width: 5%;
+    height: auto;
 }
 
 #mslide3 img:nth-child(3) {
     position: absolute;
     top: 30%;
     left: 30%;
+    width: 5%;
+    height: auto;
 }
 
 #mslide3 img:nth-child(4) {
     position: absolute;
     top: 40%;
     left: 40%;
+    width: 10%;
+    height: auto;
 }
 
 #mslide3 img:nth-child(5) {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 5%;
+    height: auto;
 }
 #mslide3 img:nth-child(6) {
     position: absolute;
     top: 60%;
     left: 60%;
+    width: 10%;
+    height: auto;
 }
 /******************************
  SLIDE 4
