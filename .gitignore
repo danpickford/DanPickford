@@ -17,6 +17,7 @@
 [Rr]elease
 x64/
 build/
+packages/
 [Bb]in/
 [Oo]bj/
 
@@ -91,12 +92,7 @@ DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
 
-# Click-Once directory
-publish/
 
-# Publish Web Output
-*.Publish.xml
-*.pubxml
 
 # NuGet Packages Directory
 ## TODO: If you have NuGet Package Restore enabled, uncomment the next line

@@ -245,6 +245,7 @@
     <Content Include="Content\JSON\level3.json" />
     <Content Include="Content\JSON\sprites.json" />
     <None Include="Properties\PublishProfiles\DanPickford - FileSystem.pubxml" />
+    <None Include="Properties\PublishProfiles\danpickford.com - FileSys.pubxml" />
     <None Include="Properties\PublishProfiles\danpickford.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\danpickford.com - Web Deploy.pubxml" />
     <Content Include="Views\Home\About.cshtml" />
